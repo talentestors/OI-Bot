@@ -21,7 +21,7 @@ if env_run_evironment == "dev":
     nonebot.load_builtin_plugins("echo")  # 内置插件
     nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
 
-nonebot.load_plugin("nonebot_plugin_apscheduler")  # 定时任务插件
+nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi_helper
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
 
 if __name__ == "__main__":

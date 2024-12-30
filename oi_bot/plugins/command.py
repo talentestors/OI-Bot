@@ -1,18 +1,15 @@
-import json
-from nonebot.log import logger
 from nonebot import on_command
 from nonebot.rule import to_me
 
-
-from oi_bot.plugins.none_plugin_oi_helper.query_api import (
+from nonebot_plugin_oi_helper.query_api import (
     get_dirs,
-    get_today_contests,
-    get_tomorrow_contests,
-    get_now_contests,
-    get_upcoming_contests,
-    get_luogu_newest_news,
-    get_luogu_random_news,
-    get_leetcode_daily,
+    _get_today_contests,
+    _get_tomorrow_contests,
+    _get_now_contests,
+    _get_upcoming_contests,
+    _get_luogu_newest_news,
+    _get_luogu_random_news,
+    _get_leetcode_daily,
     json2text_for_leetcode_daily_info,
     json2text,
     json2text_get_luogu_news_text,
@@ -27,7 +24,7 @@ today_contest = on_command("今日比赛", rule=to_me(), priority=5, block=True)
 
 @today_contest.handle()
 async def handle_today_contests():
-    res = await get_today_contests(
+    res = await _get_today_contests(
         dirs.contests.value, format=json2text(json2text_for_contest_zh)
     )
     if res == "":
@@ -41,7 +38,7 @@ tomorrow_contests = on_command("明日比赛", rule=to_me(), priority=5, block=T
 
 @tomorrow_contests.handle()
 async def handle_tomorrow_contests():
-    res = await get_tomorrow_contests(
+    res = await _get_tomorrow_contests(
         dirs.contests.value, format=json2text(json2text_for_contest_zh)
     )
     if res == "":
@@ -60,7 +57,7 @@ now_contests = on_command(
 
 @now_contests.handle()
 async def handle_now_contests():
-    res = await get_now_contests(
+    res = await _get_now_contests(
         dirs.contests.value, format=json2text(json2text_for_contest)
     )
     if res == "":
@@ -79,7 +76,7 @@ upcoming_contests = on_command(
 
 @upcoming_contests.handle()
 async def handle_upcoming_contests():
-    res = await get_upcoming_contests(
+    res = await _get_upcoming_contests(
         dirs.contests.value, format=json2text(json2text_for_contest)
     )
     if res == "":
@@ -98,7 +95,7 @@ leetcode_daily = on_command(
 
 @leetcode_daily.handle()
 async def handle_leetcode_daily():
-    res = await get_leetcode_daily(json2text(json2text_for_leetcode_daily_info))
+    res = await _get_leetcode_daily(json2text(json2text_for_leetcode_daily_info))
     await leetcode_daily.finish(res)
 
 
@@ -112,7 +109,7 @@ luogu_news = on_command(
 
 @luogu_news.handle()
 async def handle_luogu_news():
-    res = await get_luogu_newest_news(json2text(json2text_get_luogu_news_text))
+    res = await _get_luogu_newest_news(json2text(json2text_get_luogu_news_text))
     if res == "":
         res = "无"
     res = f"洛谷日报:\n{res}"
@@ -129,5 +126,5 @@ luogu_random_news = on_command(
 
 @luogu_random_news.handle()
 async def handle_luogu_random_news():
-    res = await get_luogu_random_news(json2text(json2text_get_luogu_news_text))
+    res = await _get_luogu_random_news(json2text(json2text_get_luogu_news_text))
     await luogu_random_news.finish(res)
