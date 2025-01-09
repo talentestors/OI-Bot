@@ -28,3 +28,7 @@ test = [
 
 [tool.nonebot]
 plugin_dirs = ["oi_bot/plugins"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
