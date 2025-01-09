@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/atri.png" width="256">
+<img src="https://raw.githubusercontent.com/talentestors/OI-Bot/main/docs/atri.png" width="256">
 
 # ✨OI-Bot✨
 
