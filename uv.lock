@@ -1148,19 +1148,19 @@ test = [
 requires-dist = [
     { name = "nonebot-adapter-onebot", specifier = ">=2.4.6" },
     { name = "nonebot-plugin-oi-helper", specifier = ">=0.1.2" },
-    { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.0" },
+    { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.1" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "nb-cli", specifier = ">=1.4.2" },
     { name = "nonebot-adapter-console", specifier = ">=0.6.0" },
-    { name = "nonebot-plugin-docs", specifier = ">=2.3.3" },
+    { name = "nonebot-plugin-docs", specifier = ">=2.4.1" },
     { name = "pip", specifier = ">=24.3.1" },
 ]
 test = [
     { name = "nonebug", specifier = ">=0.4.3" },
-    { name = "pytest-asyncio", specifier = ">=0.25.0" },
+    { name = "pytest-asyncio", specifier = ">=0.25.2" },
 ]
 
 [[package]]
