@@ -5,9 +5,6 @@ from nonebot_plugin_oi_helper.query_api import (
     get_dirs,
     get_today_contests,
     get_tomorrow_contests,
-    get_now_contests,
-    get_upcoming_contests,
-    get_luogu_newest_news,
     get_luogu_random_news,
     get_leetcode_daily,
     json2text_for_leetcode_daily_info,
@@ -48,40 +45,6 @@ async def handle_tomorrow_contests():
     await tomorrow_contests.finish(res)
 
 
-now_contests = on_command(
-    "正在进行的比赛",
-    rule=to_me(),
-    priority=10,
-    block=True,
-)
-
-
-@now_contests.handle()
-async def handle_now_contests():
-    res = format_contests(await get_now_contests())
-    if res == "":
-        res = "现在还没有比赛在进行哦！"
-    res = f"正在进行的比赛:\n{res}"
-    await now_contests.finish(res)
-
-
-upcoming_contests = on_command(
-    "即将开始的比赛",
-    rule=to_me(),
-    priority=10,
-    block=True,
-)
-
-
-@upcoming_contests.handle()
-async def handle_upcoming_contests():
-    res = format_contests(await get_upcoming_contests())
-    if res == "":
-        res = "未来没有比赛哦！"
-    res = f"即将开始的比赛:\n{res}"
-    await upcoming_contests.finish(res)
-
-
 leetcode_daily = on_command(
     "力扣每日一题",
     rule=to_me(),
@@ -94,23 +57,6 @@ leetcode_daily = on_command(
 async def handle_leetcode_daily():
     res = format_leetcode(await get_leetcode_daily())
     await leetcode_daily.finish(res)
-
-
-luogu_news = on_command(
-    "洛谷日报",
-    rule=to_me(),
-    priority=10,
-    block=True,
-)
-
-
-@luogu_news.handle()
-async def handle_luogu_news():
-    res = format_luogu(await get_luogu_newest_news())
-    if res == "":
-        res = "无"
-    res = f"洛谷日报:\n{res}"
-    await luogu_news.finish(res)
 
 
 luogu_random_news = on_command(
