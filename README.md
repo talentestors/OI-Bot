@@ -4,6 +4,7 @@
 
 # ✨OI-Bot✨
 
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![license](https://img.shields.io/github/license/talentestors/OI-Bot.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 ![python](https://img.shields.io/badge/python-3.12+-blue.svg)
 [![nonebot](https://img.shields.io/badge/nonebot-v2.4.1-EA5252.svg)](https://nonebot.dev/)
