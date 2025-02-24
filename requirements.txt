@@ -56,9 +56,15 @@ multidict==6.1.0
     #   aiohttp
     #   yarl
 nonebot-adapter-onebot==2.4.6
-    # via oi-bot (pyproject.toml)
+    # via
+    #   oi-bot (pyproject.toml)
+    #   nonebot-plugin-luoguluck
 nonebot-plugin-apscheduler==0.5.0
     # via nonebot-plugin-oi-helper
+nonebot-plugin-localstore==0.7.3
+    # via nonebot-plugin-luoguluck
+nonebot-plugin-luoguluck==0.2
+    # via oi-bot (pyproject.toml)
 nonebot-plugin-oi-helper==0.1.2
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.1
@@ -66,7 +72,13 @@ nonebot2==2.4.1
     #   oi-bot (pyproject.toml)
     #   nonebot-adapter-onebot
     #   nonebot-plugin-apscheduler
+    #   nonebot-plugin-localstore
+    #   nonebot-plugin-luoguluck
     #   nonebot-plugin-oi-helper
+nonestorage==0.1.0
+    # via nonebot-plugin-localstore
+pillow==11.1.0
+    # via nonebot-plugin-luoguluck
 propcache==0.2.1
     # via
     #   aiohttp
@@ -76,6 +88,7 @@ pydantic==2.10.4
     #   fastapi
     #   nonebot-adapter-onebot
     #   nonebot-plugin-apscheduler
+    #   nonebot-plugin-localstore
     #   nonebot2
 pydantic-core==2.27.2
     # via pydantic
@@ -98,6 +111,7 @@ typing-extensions==4.12.2
     #   anyio
     #   fastapi
     #   nonebot-adapter-onebot
+    #   nonebot-plugin-localstore
     #   nonebot2
     #   pydantic
     #   pydantic-core
