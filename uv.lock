@@ -1076,16 +1076,16 @@ wheels = [
 
 [[package]]
 name = "nonebot-plugin-oi-helper"
-version = "0.1.2"
+version = "0.2.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
 dependencies = [
     { name = "nonebot-plugin-apscheduler" },
     { name = "nonebot2", extra = ["aiohttp"] },
     { name = "requests" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ab/aa/185fd77e5a96edd8c221054e64a5735b39981178e147fc17e2209df93237/nonebot_plugin_oi_helper-0.1.2.tar.gz", hash = "sha256:4ffcb76064e7f12c83bd8b6e4b38861e5466a45e8a08298d2d0a8514842ac6a3" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/88/f3/7fb1fa094b118f0bef96b3c78e856bd40ca85a08d0b2f8c9a1a3b785f3fc/nonebot_plugin_oi_helper-0.2.0.tar.gz", hash = "sha256:292ee5e3a271257824828b48948d1293038915ef62bb89001bcb08758b9e156d" }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/7c/fc/3cc1a565f653bf9a7b8b91d310a09e2cc179535e6c5885f54a29ddc4c2d1/nonebot_plugin_oi_helper-0.1.2-py3-none-any.whl", hash = "sha256:994d5421313f9acfb268209f7a3d45678f0d3139f7b7bc7f4be25772f3906cd5" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/c3/a8/1ef81bfc62c21ca3427a760c3ad7a42553f7b8e36fd806d79f6e4f0f0a12/nonebot_plugin_oi_helper-0.2.0-py3-none-any.whl", hash = "sha256:6ea68780adbe238890fd459eede49a8b2d8ea8c5e282692534961f49808d74bc" },
 ]
 
 [[package]]
@@ -1168,7 +1168,7 @@ wheels = [
 
 [[package]]
 name = "oi-bot"
-version = "0.2.0"
+version = "0.3.0"
 source = { virtual = "." }
 dependencies = [
     { name = "nonebot-adapter-onebot" },
@@ -1193,7 +1193,7 @@ test = [
 requires-dist = [
     { name = "nonebot-adapter-onebot", specifier = ">=2.4.6" },
     { name = "nonebot-plugin-luoguluck", specifier = ">=0.2" },
-    { name = "nonebot-plugin-oi-helper", specifier = ">=0.1.2" },
+    { name = "nonebot-plugin-oi-helper", specifier = ">=0.2.0" },
     { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.1" },
 ]
 
