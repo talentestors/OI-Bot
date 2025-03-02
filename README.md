@@ -69,3 +69,6 @@ This project includes software from the following sources:
    - Copyright (C) 2024 talentestors
    - Licensed under the GNU Affero General Public License, Version 3
    - <https://www.gnu.org/licenses/agpl-3.0.html>
+4. [nonebot-plugin-luoguluck](https://github.com/JohnRichard4096/luogu-luck)
+    - Licensed under the GNU General Public License, Version 3
+    - <https://www.gnu.org/licenses/gpl-3.0.html>
