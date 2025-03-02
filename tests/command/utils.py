@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from nonebot.adapters.console import User, Message, MessageEvent
 
 def make_event(message: str = "") -> MessageEvent:

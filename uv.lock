@@ -1076,16 +1076,16 @@ wheels = [
 
 [[package]]
 name = "nonebot-plugin-oi-helper"
-version = "0.2.0"
-source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
+version = "0.2.1"
+source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
 dependencies = [
     { name = "nonebot-plugin-apscheduler" },
     { name = "nonebot2", extra = ["aiohttp"] },
     { name = "requests" },
 ]
-sdist = { url = "https://mirrors.aliyun.com/pypi/packages/88/f3/7fb1fa094b118f0bef96b3c78e856bd40ca85a08d0b2f8c9a1a3b785f3fc/nonebot_plugin_oi_helper-0.2.0.tar.gz", hash = "sha256:292ee5e3a271257824828b48948d1293038915ef62bb89001bcb08758b9e156d" }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/a0/af/37b950ae1502dfd51b7c979f2854940f55433a60e446c95ae122d4c84169/nonebot_plugin_oi_helper-0.2.1.tar.gz", hash = "sha256:92c8faf3b4de6490c1f0da618dbcb212573dc2093990f876463c4e0277bad622", size = 23247 }
 wheels = [
-    { url = "https://mirrors.aliyun.com/pypi/packages/c3/a8/1ef81bfc62c21ca3427a760c3ad7a42553f7b8e36fd806d79f6e4f0f0a12/nonebot_plugin_oi_helper-0.2.0-py3-none-any.whl", hash = "sha256:6ea68780adbe238890fd459eede49a8b2d8ea8c5e282692534961f49808d74bc" },
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/ec/b4/5e03839889d81ca96abfb7376ed9898b6e73924d83584808cdedf2c896b8/nonebot_plugin_oi_helper-0.2.1-py3-none-any.whl", hash = "sha256:3ae2bbcf72b37a2e17a189e453500392490f5fe9cbcf9fa593223b0709520b9d", size = 38510 },
 ]
 
 [[package]]
@@ -1193,7 +1193,7 @@ test = [
 requires-dist = [
     { name = "nonebot-adapter-onebot", specifier = ">=2.4.6" },
     { name = "nonebot-plugin-luoguluck", specifier = ">=0.2" },
-    { name = "nonebot-plugin-oi-helper", specifier = ">=0.2.0" },
+    { name = "nonebot-plugin-oi-helper", specifier = ">=0.2.1" },
     { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.1" },
 ]
 
