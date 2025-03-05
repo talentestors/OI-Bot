@@ -3,15 +3,7 @@ from datetime import datetime
 from nonebug import App
 from nonebot.adapters.console import User, Message, MessageEvent
 from nonebot.log import logger
-
-
-def make_event(message: str = "") -> MessageEvent:
-    return MessageEvent(
-        time=datetime.now(),
-        self_id="test",
-        message=Message(message),
-        user=User(id="user"),
-    )
+from .utils import make_even
 
 
 async def test_today_contest(app: App):
