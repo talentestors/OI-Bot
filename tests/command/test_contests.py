@@ -1,6 +1,9 @@
+from datetime import datetime
+
 from nonebug import App
+from nonebot.adapters.console import User, Message, MessageEvent
 from nonebot.log import logger
-from .utils import make_event
+from .utils import make_even
 
 
 async def test_today_contest(app: App):

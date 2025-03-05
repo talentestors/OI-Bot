@@ -1077,15 +1077,15 @@ wheels = [
 [[package]]
 name = "nonebot-plugin-oi-helper"
 version = "0.2.1"
-source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
+source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
 dependencies = [
     { name = "nonebot-plugin-apscheduler" },
     { name = "nonebot2", extra = ["aiohttp"] },
     { name = "requests" },
 ]
-sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/a0/af/37b950ae1502dfd51b7c979f2854940f55433a60e446c95ae122d4c84169/nonebot_plugin_oi_helper-0.2.1.tar.gz", hash = "sha256:92c8faf3b4de6490c1f0da618dbcb212573dc2093990f876463c4e0277bad622", size = 23247 }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/a0/af/37b950ae1502dfd51b7c979f2854940f55433a60e446c95ae122d4c84169/nonebot_plugin_oi_helper-0.2.1.tar.gz", hash = "sha256:92c8faf3b4de6490c1f0da618dbcb212573dc2093990f876463c4e0277bad622" }
 wheels = [
-    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/ec/b4/5e03839889d81ca96abfb7376ed9898b6e73924d83584808cdedf2c896b8/nonebot_plugin_oi_helper-0.2.1-py3-none-any.whl", hash = "sha256:3ae2bbcf72b37a2e17a189e453500392490f5fe9cbcf9fa593223b0709520b9d", size = 38510 },
+    { url = "https://mirrors.aliyun.com/pypi/packages/ec/b4/5e03839889d81ca96abfb7376ed9898b6e73924d83584808cdedf2c896b8/nonebot_plugin_oi_helper-0.2.1-py3-none-any.whl", hash = "sha256:3ae2bbcf72b37a2e17a189e453500392490f5fe9cbcf9fa593223b0709520b9d" },
 ]
 
 [[package]]
