@@ -1,5 +1,4 @@
 import nonebot
-# from nonebot.adapters.console import Adapter as ConsoleAdapter # dev
 from nonebot.adapters.onebot.v11 import Adapter as OnebotAdapterV11
 import nonebot.config  # 避免重复命名
 
@@ -8,7 +7,6 @@ nonebot.init()
 
 # 注册适配器
 driver = nonebot.get_driver()
-# driver.register_adapter(ConsoleAdapter) # dev
 driver.register_adapter(OnebotAdapterV11)
 
 # 加载配置文件
@@ -18,6 +16,9 @@ env_run_evironment = str(env_config.environment).strip()
 # 在这里加载插件
 # dev 环境下
 if env_run_evironment == "dev":
+    from nonebot.adapters.console import Adapter as ConsoleAdapter
+
+    driver.register_adapter(ConsoleAdapter)
     nonebot.load_builtin_plugins("echo")  # 内置插件
     nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
 
