@@ -10,16 +10,16 @@ license = "AGPL-3.0-or-later"
 
 dependencies = [
     "nonebot-adapter-onebot>=2.4.6",
-    "nonebot-plugin-luoguluck>=0.2",
+    "nonebot-plugin-luoguluck>=0.3",
     "nonebot-plugin-oi-helper>=0.2.1",
-    "nonebot2[aiohttp,fastapi]>=2.4.1",
+    "nonebot2[aiohttp,fastapi]>=2.4.2",
 ]
 
 [dependency-groups]
 dev = [
     "nb-cli>=1.4.2",
     "nonebot-adapter-console>=0.6.0",
-    "nonebot-plugin-docs>=2.4.1",
+    "nonebot-plugin-docs>=2.4.2",
     "pip>=24.3.1",
 ]
 test = [
