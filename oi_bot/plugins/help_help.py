@@ -12,7 +12,8 @@ HELP_LIST = """HELP MENU:
 3. 每日一题: 获取 LeetCode 每日一题
 4. 洛谷日报: 获取洛谷日报
 5. luck: 获取今日运势
-6. help: 获取帮助信息"""
+6. help: 获取帮助信息
+7. about/关于: 获取机器人信息"""
 
 
 def get_show_menu() -> str:
@@ -29,6 +30,7 @@ def get_show_menu() -> str:
     4. 洛谷日报: 获取洛谷日报
     5. luck: 获取今日运势
     6. help: 获取帮助信息
+    7. about/关于: 获取机器人信息
     """
     return HELP_LIST
 
