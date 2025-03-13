@@ -35,7 +35,7 @@ def get_show_menu() -> str:
     return HELP_LIST
 
 
-help = on_command("help", rule=to_me(), priority=1, block=True)
+help = on_command("help", aliases={"帮助"}, rule=to_me(), priority=1, block=True)
 
 
 @help.handle()
