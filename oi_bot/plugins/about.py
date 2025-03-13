@@ -49,16 +49,16 @@ https://github.com/talentestors/OI-Bot"""
     return lang == "cn" and ABOUT_MSG_CN or ABOUT_MSG
 
 
-help = on_command("about", rule=to_me(), priority=1, block=True)
+about = on_command("about", rule=to_me(), priority=1, block=True)
 
 
-@help.handle()
-async def handle_help(bot, event):
-    await help.finish(get_about_msg("en"))
+@about.handle()
+async def handle_about(bot, event):
+    await about.finish(get_about_msg("en"))
 
-help_cn = on_command("关于", rule=to_me(), priority=1, block=True)
+about_cn = on_command("关于", rule=to_me(), priority=1, block=True)
 
 
-@help_cn.handle()
-async def handle_help_cn(bot, event):
-    await help_cn.finish(get_about_msg("cn"))
+@about_cn.handle()
+async def handle_about_cn(bot, event):
+    await about_cn.finish(get_about_msg("cn"))
