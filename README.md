@@ -32,7 +32,7 @@ pip install -r requirements.txt
 Usage of UV
 
 ```bash
-uv sync
+uv sync --no-dev
 ```
 
 ### Run
