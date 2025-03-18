@@ -1,6 +1,6 @@
 [project]
 name = "oi-bot"
-version = "0.5.1"
+version = "0.5.2"
 description = "This chatbot provides match information for OIer and ACMer, based on the Nonebot2 framework."
 readme = "README.md"
 requires-python = ">=3.10, <4.0"
@@ -11,7 +11,7 @@ license = "AGPL-3.0-or-later"
 dependencies = [
     "nonebot-adapter-onebot>=2.4.6",
     "nonebot-plugin-luoguluck>=0.3",
-    "nonebot-plugin-oi-helper>=0.2.1",
+    "nonebot-plugin-oi-helper>=0.3.0",
     "nonebot2[aiohttp,fastapi]>=2.4.2",
 ]
 
