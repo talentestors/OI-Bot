@@ -51,8 +51,14 @@ async def test_leetcode_daily(app: App):
         get_leetcode_daily,
         format_leetcode,
     )
+    from nonebot_plugin_oi_helper import loadLeetCodeDailyMsg
 
-    msg = format_leetcode(await get_leetcode_daily())
+    try:
+        msg = format_leetcode(await get_leetcode_daily())
+    except KeyError as e:
+        logger.error(e)
+        await loadLeetCodeDailyMsg()
+        msg = format_leetcode(await get_leetcode_daily())
     logger.trace(msg)
 
     async with app.test_matcher(leetcode_daily) as ctx:
