@@ -67,7 +67,7 @@ nonebot-plugin-localstore==0.7.4
     #   nonebot-plugin-oi-helper
 nonebot-plugin-luoguluck==0.3
     # via oi-bot (pyproject.toml)
-nonebot-plugin-oi-helper==0.4.0
+nonebot-plugin-oi-helper==0.4.1
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.2
     # via
