@@ -696,11 +696,11 @@ wheels = [
 
 [[package]]
 name = "iniconfig"
-version = "2.0.0"
+version = "2.1.0"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
-sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/d7/4b/cbd8e699e64a6f16ca3a8220661b5f83792b3017d0f79807cb8708d33913/iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3", size = 4646 }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/f2/97/ebf4da567aa6827c909642694d71c9fcf53e5b504f2d96afea02718862f3/iniconfig-2.1.0.tar.gz", hash = "sha256:3abbd2e30b36733fee78f9c7f7308f2d0050e88f0087fd25c2645f63c773e1c7", size = 4793 }
 wheels = [
-    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/ef/a6/62565a6e1cf69e10f5727360368e451d4b7f58beeac6173dc9db836a5b46/iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374", size = 5892 },
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/2c/e1/e6716421ea10d38022b952c159d5161ca1193197fb744506875fbb87ea7b/iniconfig-2.1.0-py3-none-any.whl", hash = "sha256:9deba5723312380e77435581c6bf4935c94cbfab9b1ed33ef8d238ea168eb760", size = 6050 },
 ]
 
 [[package]]
@@ -1091,7 +1091,7 @@ wheels = [
 
 [[package]]
 name = "nonebot-plugin-oi-helper"
-version = "0.4.1"
+version = "0.4.2"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
 dependencies = [
     { name = "nonebot-plugin-apscheduler" },
@@ -1099,9 +1099,9 @@ dependencies = [
     { name = "nonebot2", extra = ["aiohttp"] },
     { name = "requests" },
 ]
-sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/df/fd/692d277f9e60f77954a85da96baca11abace6826d1093bd40f74ba5f9ee3/nonebot_plugin_oi_helper-0.4.1.tar.gz", hash = "sha256:e956824937a6f70d71915a54a912d1ab2f7d4a7511c9f0717451783d46dd23c3", size = 23129 }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/89/f7/ac4a446cccb8be0c7af65a224dee8ce5d8c641a91686f378442cb5b0b5b0/nonebot_plugin_oi_helper-0.4.2.tar.gz", hash = "sha256:ccff1a6cc907aa95c9665beac1af3932eac2071206fc28f4078f7e963ade9a50", size = 23250 }
 wheels = [
-    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/a0/78/bae1945c645b3c15076eb6bdd5622b0b08daf0732c211bcb981ec8322f23/nonebot_plugin_oi_helper-0.4.1-py3-none-any.whl", hash = "sha256:2b94939ef52a6fb629dbfe198ff82df034b9da871c1b5e5a5d0ef0d8eb9123b3", size = 38695 },
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/e7/f9/919ab4fa9a60b6dfcb59dfcf06696801070612be696726d27049fefbe66d/nonebot_plugin_oi_helper-0.4.2-py3-none-any.whl", hash = "sha256:0325fc4ee85775e0c9e2a703d59786ba63c721ab2cd4e3997ff4a68eda4a1e40", size = 38890 },
 ]
 
 [[package]]
@@ -1184,7 +1184,7 @@ wheels = [
 
 [[package]]
 name = "oi-bot"
-version = "0.5.4"
+version = "0.5.5"
 source = { virtual = "." }
 dependencies = [
     { name = "nonebot-adapter-onebot" },
@@ -1209,7 +1209,7 @@ test = [
 requires-dist = [
     { name = "nonebot-adapter-onebot", specifier = ">=2.4.6" },
     { name = "nonebot-plugin-luoguluck", specifier = ">=0.3" },
-    { name = "nonebot-plugin-oi-helper", specifier = ">=0.4.1" },
+    { name = "nonebot-plugin-oi-helper", specifier = ">=0.4.2" },
     { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.2" },
 ]
 
@@ -1312,11 +1312,11 @@ wheels = [
 
 [[package]]
 name = "platformdirs"
-version = "4.3.6"
+version = "4.3.7"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
-sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/13/fc/128cc9cb8f03208bdbf93d3aa862e16d376844a14f9a0ce5cf4507372de4/platformdirs-4.3.6.tar.gz", hash = "sha256:357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907", size = 21302 }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/b6/2d/7d512a3913d60623e7eb945c6d1b4f0bddf1d0b7ada5225274c87e5b53d1/platformdirs-4.3.7.tar.gz", hash = "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351", size = 21291 }
 wheels = [
-    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl", hash = "sha256:73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb", size = 18439 },
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/6d/45/59578566b3275b8fd9157885918fcd0c4d74162928a5310926887b856a51/platformdirs-4.3.7-py3-none-any.whl", hash = "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94", size = 18499 },
 ]
 
 [[package]]
