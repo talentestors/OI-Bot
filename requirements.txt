@@ -51,7 +51,7 @@ loguru==0.7.3
     # via nonebot2
 msgpack==1.1.0
     # via nonebot-adapter-onebot
-multidict==6.1.0
+multidict==6.2.0
     # via
     #   aiohttp
     #   yarl
