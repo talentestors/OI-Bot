@@ -127,7 +127,7 @@ uvicorn==0.34.0
     # via nonebot2
 watchfiles==1.0.4
     # via uvicorn
-websockets==15.0
+websockets==15.0.1
     # via uvicorn
 win32-setctime==1.2.0
     # via loguru
