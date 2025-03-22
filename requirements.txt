@@ -15,7 +15,7 @@ anyio==4.8.0
     #   watchfiles
 apscheduler==3.11.0
     # via nonebot-plugin-apscheduler
-attrs==25.1.0
+attrs==25.3.0
     # via aiohttp
 brotli==1.1.0
     # via aiohttp
