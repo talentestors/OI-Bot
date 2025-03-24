@@ -32,7 +32,7 @@ colorama==0.4.6
     #   uvicorn
 exceptiongroup==1.2.2
     # via nonebot2
-fastapi==0.115.11
+fastapi==0.115.12
     # via nonebot2
 frozenlist==1.5.0
     # via
