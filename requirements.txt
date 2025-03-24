@@ -117,7 +117,7 @@ typing-extensions==4.12.2
     #   nonebot2
     #   pydantic
     #   pydantic-core
-tzdata==2025.1
+tzdata==2025.2
     # via tzlocal
 tzlocal==5.3.1
     # via apscheduler
