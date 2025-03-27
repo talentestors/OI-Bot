@@ -85,7 +85,7 @@ propcache==0.3.1
     # via
     #   aiohttp
     #   yarl
-pydantic==2.10.6
+pydantic==2.11.0
     # via
     #   fastapi
     #   nonebot-adapter-onebot
