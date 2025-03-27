@@ -67,7 +67,7 @@ nonebot-plugin-localstore==0.7.4
     #   nonebot-plugin-oi-helper
 nonebot-plugin-luoguluck==0.3
     # via oi-bot (pyproject.toml)
-nonebot-plugin-oi-helper==0.4.2
+nonebot-plugin-oi-helper==0.4.3
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.2
     # via
@@ -92,7 +92,7 @@ pydantic==2.10.6
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.33.0
+pydantic-core==2.27.2
     # via pydantic
 pygtrie==2.5.0
     # via nonebot2
