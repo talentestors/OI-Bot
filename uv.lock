@@ -1184,7 +1184,7 @@ wheels = [
 
 [[package]]
 name = "oi-bot"
-version = "0.5.5"
+version = "0.5.6"
 source = { virtual = "." }
 dependencies = [
     { name = "nonebot-adapter-onebot" },
