@@ -52,8 +52,7 @@ Edit `.env` file
 Configurations:
 
 - `OneBot`:
-  - `ONEBOT_ACCESS_TOKEN`: OneBot access token
-  - `ONEBOT_SECRET`: OneBot secret
+  - `ONEBOT_ACCESS_TOKEN`: OneBot 11 access token
 - `nonebot-plugin-oi-helper`:
   - see [nonebot-plugin-oi-helper](https://github.com/talentestors/nonebot-plugin-oi-helper)
 
