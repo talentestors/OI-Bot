@@ -53,6 +53,7 @@ Configurations:
 
 - `OneBot`:
   - `ONEBOT_ACCESS_TOKEN`: OneBot 11 access token
+  - url: `ws://ip:port/onebot/v11/ws`
 - `nonebot-plugin-oi-helper`:
   - see [nonebot-plugin-oi-helper](https://github.com/talentestors/nonebot-plugin-oi-helper)
 
