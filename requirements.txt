@@ -2,8 +2,6 @@
 #    uv pip compile pyproject.toml -o requirements.txt --universal --no-deps
 nonebot-adapter-onebot==2.4.6
     # via oi-bot (pyproject.toml)
-nonebot-plugin-luoguluck==0.3
-    # via oi-bot (pyproject.toml)
 nonebot-plugin-oi-helper==0.6.1
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.2
