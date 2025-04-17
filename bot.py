@@ -37,7 +37,6 @@ if env_run_evironment == "dev":
 
 # 默认环境下
 nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi_helper
-nonebot.load_plugin("nonebot_plugin_luoguluck")  # luoguluck
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
 
 if __name__ == "__main__":
