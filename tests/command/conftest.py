@@ -25,6 +25,5 @@ async def after_nonebot_init(after_nonebot_init: None):
     driver = nonebot.get_driver()
     driver.register_adapter(ConsoleAdapter)
     nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi_helper
-    nonebot.load_plugin("nonebot_plugin_luoguluck")  # luoguluck
     nonebot.load_plugins("oi_bot/plugins")  # 加载插件
     logger.info("Plugin loaded")
