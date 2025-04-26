@@ -27,6 +27,7 @@ jobs:
             "https://ghcr.io/v2/${repo}/tags/list" | jq -r '.tags[]' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -n 1)
           echo "Docker tag: $TAG"
           echo "::set-output name=tag::$TAG"
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
 
       - name: Check current directory contents
         run: |
@@ -39,6 +40,7 @@ jobs:
           current_folder=$(basename $(ls -d /home/runner/work/OI-Bot/OI-Bot/*/ | head -n 1))
           echo "Current folder name: $current_folder"
           echo "::set-output name=current_folder_name::$current_folder"
+          echo "current_folder_name=$current_folder" >> $GITHUB_OUTPUT
 
       - name: Compare and rename folder
         if: ${{ steps.get_current_folder.outputs.current_folder_name != steps.get_docker_tag.outputs.tag }}
