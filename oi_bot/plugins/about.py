@@ -24,7 +24,7 @@ def get_about_msg(lang: str) -> str:
     >>> print(get_about_msg("cn"))
     关于机器人：
     Hi, 我是一个基于nonebot2的QQ机器人。
-    我可以为OIer和ACMer提供比赛信息。
+    我可以为OI和ACM选手提供比赛信息。
     我仍在开发中，所以可能会有一些bug。
     如果您有任何问题或建议，请在仓库上提交issue。
     机器人的仓库是：
