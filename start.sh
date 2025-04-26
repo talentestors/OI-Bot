@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-echo "清理旧目录..."
-if [ -d "/root/OI-Bot/" ]; then
-    rm -rf /root/OI-Bot/
-fi
-
-echo "克隆仓库..."
-git clone --depth 1 https://github.com/talentestors/OI-Bot.git /root/OI-Bot
+echo "进入目录..."
 cd /root/OI-Bot
+
+echo "拉取最新代码..."
+git pull --depth 1
+
+echo "清理 Git 仓库..."
+git gc --prune=now --aggressive
 
 echo "同步依赖并激活虚拟环境..."
 uv sync --no-dev
