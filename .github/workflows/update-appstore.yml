@@ -24,7 +24,7 @@ jobs:
           token=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:${repo}:pull" \
             -u "${{ github.actor }}:${GH_TOKEN}" | jq -r '.token')
           TAG=$(curl -s -H "Authorization: Bearer $token" \
-            "https://ghcr.io/v2/${repo}/tags/list" | jq -r '.tags[]' | grep -E '^latest$')
+            "https://ghcr.io/v2/${repo}/tags/list" | jq -r '.tags[]' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -n 1)
           echo "Docker tag: $TAG"
           echo "tag=$TAG" >> $GITHUB_ENV
 
