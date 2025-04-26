@@ -3,7 +3,7 @@ version: "1.0.1"
 services:
   oi-bot:
     build: .
-    container_name: OI-Bot
+    container_name: oi-bot
     ports:
       - "8024:8024"
     env_file:
