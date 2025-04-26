@@ -35,6 +35,14 @@ Usage of UV
 uv sync --no-dev
 ```
 
+### Docker
+
+Pull and run the docker image directly:
+
+```bash
+docker pull ghcr.io/talentestors/oi-bot:latest
+```
+
 ### Run
 
 ```bash
