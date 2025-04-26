@@ -10,7 +10,6 @@ __pycache__/
 !pyproject.toml
 *.sh
 tests/
-.env.example
 *.txt
 !requirements.txt
 scripts/
