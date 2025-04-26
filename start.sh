@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 echo "进入目录..."
@@ -11,7 +11,7 @@ echo "清理 Git 仓库..."
 git gc --prune=now --aggressive
 
 echo "同步依赖并激活虚拟环境..."
-uv sync --no-dev
+/usr/bin/env uv sync --no-dev
 if [ -f ".venv/bin/activate" ]; then
     source .venv/bin/activate
 else
