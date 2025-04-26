@@ -58,7 +58,7 @@ jobs:
             git init
             git add .
             git commit -m "Rename folder from ${current_folder_name} to ${TAG}"
-            git remote add origin git@github.com/talentestors/OI-Bot.git
+            git remote add origin git@github.com:talentestors/OI-Bot.git
             git push -f origin HEAD:refs/heads/1panel
           else
             echo "Source folder '$current_folder' does not exist."
