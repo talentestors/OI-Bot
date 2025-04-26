@@ -36,15 +36,15 @@ jobs:
       - name: Get current folder name
         id: get_current_folder
         run: |
-          current_folder=$(basename $(ls -d /home/runner/work/OI-Bot/OI-Bot*/ | head -n 1))
+          current_folder=$(basename $(ls -d /home/runner/work/OI-Bot/OI-Bot/*/ | head -n 1))
           echo "Current folder name: $current_folder"
           echo "current_folder_name=$current_folder" >> $GITHUB_ENV
 
       - name: Compare and rename folder
         if: ${{ env.current_folder_name != env.tag }}
         run: |
-          current_folder="/home/runner/work/OI-Bot/OI-Bot${{ env.current_folder_name }}"
-          target_folder="/home/runner/work/OI-Bot/OI-Bot${{ env.tag }}"
+          current_folder="/home/runner/work/OI-Bot/OI-Bot/${{ env.current_folder_name }}"
+          target_folder="/home/runner/work/OI-Bot/OI-Bot/${{ env.tag }}"
 
           echo "Current folder path: $current_folder"
           echo "Target folder path: $target_folder"
