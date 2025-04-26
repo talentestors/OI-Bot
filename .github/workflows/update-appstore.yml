@@ -26,7 +26,7 @@ jobs:
           TAG=$(curl -s -H "Authorization: Bearer $token" \
             "https://ghcr.io/v2/${repo}/tags/list" | jq -r '.tags[]' | grep -E '^[0-9]+(\.[0-9]+)+$' | sort -V | tail -n 1)
           echo "Docker tag: $TAG"
-          echo "tag=$TAG" >> $GITHUB_ENV
+          echo "::set-output name=tag::$TAG"
 
       - name: Check current directory contents
         run: |
@@ -38,13 +38,13 @@ jobs:
         run: |
           current_folder=$(basename $(ls -d /home/runner/work/OI-Bot/OI-Bot/*/ | head -n 1))
           echo "Current folder name: $current_folder"
-          echo "current_folder_name=$current_folder" >> $GITHUB_ENV
+          echo "::set-output name=current_folder_name::$current_folder"
 
       - name: Compare and rename folder
-        if: ${{ env.current_folder_name != env.tag }}
+        if: ${{ steps.get_current_folder.outputs.current_folder_name != steps.get_docker_tag.outputs.tag }}
         run: |
-          current_folder="/home/runner/work/OI-Bot/OI-Bot/${{ env.current_folder_name }}"
-          target_folder="/home/runner/work/OI-Bot/OI-Bot/${{ env.tag }}"
+          current_folder="/home/runner/work/OI-Bot/OI-Bot/${{ steps.get_current_folder.outputs.current_folder_name }}"
+          target_folder="/home/runner/work/OI-Bot/OI-Bot/${{ steps.get_docker_tag.outputs.tag }}"
 
           echo "Current folder path: $current_folder"
           echo "Target folder path: $target_folder"
@@ -66,5 +66,5 @@ jobs:
           fi
 
       - name: Notify if no rename needed
-        if: ${{ env.current_folder_name == env.tag }}
+        if: ${{ steps.get_current_folder.outputs.current_folder_name == steps.get_docker_tag.outputs.tag }}
         run: echo "No folder rename needed. Current folder name is already ${TAG}"
