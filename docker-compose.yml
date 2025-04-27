@@ -16,3 +16,8 @@ services:
       - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
     labels:
       createdBy: "talentestors"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "16m"
+        max-file: "7"
