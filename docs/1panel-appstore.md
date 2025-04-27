@@ -46,7 +46,7 @@ fi
 
 install_dir=$(which 1pctl | xargs grep '^BASE_DIR=' | cut -d'=' -f2)
 
-rm -rf $install_dir/1panel/resource/apps/local/oi-bot-1panel
+rm -rf $install_dir/1panel/resource/apps/local/OI-Bot-1panel
 
 if command -v wget > /dev/null; then
     wget -O $install_dir/1panel/resource/apps/local/oi-bot-1panel.zip https://github.com/talentestors/OI-Bot/archive/refs/heads/1panel.zip
@@ -64,7 +64,7 @@ if [ $? -ne 0 ]; then
 fi
 rm -rf $install_dir/1panel/resource/apps/local/oi-bot-1panel.zip
 rm -rf $install_dir/1panel/resource/apps/local/oi-bot
-mv $install_dir/1panel/resource/apps/local/oi-bot-1panel $install_dir/1panel/resource/apps/local/oi-bot
+mv $install_dir/1panel/resource/apps/local/OI-Bot-1panel $install_dir/1panel/resource/apps/local/oi-bot
 echo "success"
 ```
 
