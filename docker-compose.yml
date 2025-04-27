@@ -1,15 +1,18 @@
-version: "1.0.1"
-
 services:
   oi-bot:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: oi-bot
+    restart: unless-stopped
     ports:
       - "8024:8024"
     env_file:
-      - .env   # 这里自动读取 .env 文件中的所有变量
+      - .env
     environment:
-      - CLIST__USERNAME=
-      - CLIST__USER_KEY=
-      - ONEBOT_ACCESS_TOKEN=
-    restart: unless-stopped
+      - LOG_LEVEL=${LOG_LEVEL}
+      - CLIST__USERNAME=${CLIST__USERNAME}
+      - CLIST__USER_KEY=${CLIST__USER_KEY}
+      - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
+    labels:
+      createdBy: "talentestors"
