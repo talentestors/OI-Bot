@@ -58,6 +58,10 @@ else
 fi
 
 unzip "$install_dir/1panel/resource/apps/local/oi-bot-1panel.zip" -d "$install_dir/1panel/resource/apps/local/"
+if [ $? -ne 0 ]; then
+    echo "解压失败，请检查压缩包或安装unzip工具"
+    exit 1
+fi
 rm -rf $install_dir/1panel/resource/apps/local/oi-bot-1panel.zip
 rm -rf $install_dir/1panel/resource/apps/local/oi-bot
 mv $install_dir/1panel/resource/apps/local/oi-bot-1panel $install_dir/1panel/resource/apps/local/oi-bot
