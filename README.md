@@ -47,7 +47,7 @@ docker pull ghcr.io/talentestors/oi-bot:latest
 
 #### Use 1panel appstore deployment
 
-[see docs](./docs/1panel-appstore.md)
+[See docs](./docs/1panel-appstore.md)
 
 ### Run
 
