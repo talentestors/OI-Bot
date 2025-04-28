@@ -80,7 +80,7 @@ pydantic==2.11.3
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.33.1
+pydantic-core==2.34.1
     # via pydantic
 pygtrie==2.5.0
     # via nonebot2
