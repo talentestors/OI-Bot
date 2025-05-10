@@ -18,7 +18,7 @@ services:
       - CLIST__USER_KEY=${CLIST__USER_KEY}
       - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
     volumes:
-      - ${HOME}/.cache:${HOME}/.cache
+      - ~/.cache:~/.cache
     labels:
       createdBy: "talentestors"
     logging:
