@@ -1,0 +1,26 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  oi-bot:
+    image: ghcr.io/talentestors/oi-bot:latest
+    container_name: oi-bot
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PORT}:8024"
+    env_file:
+      - .env
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL}
+      - CLIST__USERNAME=${CLIST__USERNAME}
+      - CLIST__USER_KEY=${CLIST__USER_KEY}
+      - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
+    labels:
+      createdBy: "talentestors"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "32m"
+        max-file: "7"
