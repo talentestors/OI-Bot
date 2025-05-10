@@ -36,7 +36,8 @@ if env_run_evironment == "dev":
 # nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
 
 # 默认环境下
-nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi_helper
+nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi-helper
+nonebot.load_plugin("nonebot_plugin_neuro_draw")  # neuro-draw
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
 
 if __name__ == "__main__":
