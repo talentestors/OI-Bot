@@ -19,6 +19,7 @@ services:
       - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
     volumes:
       - ~/.cache:~/.cache
+      - ~/.local/share/nonebot2:~/.local/share/nonebot2
     labels:
       createdBy: "talentestors"
     logging:
