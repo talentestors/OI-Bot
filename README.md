@@ -83,3 +83,5 @@ This project includes software from the following sources:
    - Copyright (C) 2024 talentestors
    - Licensed under the GNU Affero General Public License, Version 3
    - <https://www.gnu.org/licenses/agpl-3.0.html>
+4. [nonebot-plugin-neuro-draw](https://github.com/zhaomaoniu/nonebot-plugin-neuro-draw)
+   - Licensed under the MIT License
