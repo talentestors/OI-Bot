@@ -14,7 +14,7 @@
 
 </div>
 
-This chatbot provides match information for OIer and ACMer, based on the Nonebot2 framework.
+This chatbot provides relevant information for OIer and ACMer, based on the Nonebot2 framework.
 
 ## Usage
 
