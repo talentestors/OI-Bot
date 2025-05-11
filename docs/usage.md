@@ -6,7 +6,7 @@
 
 ### If use NapCatQQ Docker image
 
-Additional paths '/root/.cache/nonebot2' and '/root/.cache/nonebot2' need to be volume mounted.
+Additional path '/root/.cache/nonebot2' needs to be volume mounted.
 
 ![NapCatQQ 1panel App](images/napcatQQ-volume.png)
 
