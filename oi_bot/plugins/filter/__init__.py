@@ -46,7 +46,7 @@ if bot_url_filter_enable:
 
     logger.debug(f"filters: {filters}")
 
-    def filter_message_contents(contents: list[Any]) -> list[Any]:
+    def _filter_message_contents(contents: list[Any]) -> list[Any]:
         new_list: list[Any] = []
         for item in contents:
             match item:
