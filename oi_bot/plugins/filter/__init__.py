@@ -70,9 +70,9 @@ if bot_url_filter_enable:
         message = data["message"]
         match message:
             case ConsoleMessage():
-                message.content = filter_message_contents(message.content)
+                message.content = _filter_message_contents(message.content)
             case list():
-                data["message"] = filter_message_contents(message)
+                data["message"] = _filter_message_contents(message)
             case _:
                 logger.error(f"Unknown message type: {type(message)}")
                 raise TypeError(f"Unknown message type: {type(message)}")
