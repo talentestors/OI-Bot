@@ -81,7 +81,5 @@ class Filter(object):
         """
         Delete the filter.
         """
-        del self.filter_strategy
-        del self.replace_strategy
         self.filter_strategy = None
         self.replace_strategy = None
