@@ -13,6 +13,19 @@
                 "isDefault": true
             },
             "problemMatcher": []
+        },
+        {
+            "label": "🗑️ Cleanup Log",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/scripts/clean-log.js"
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": false
+            },
+            "problemMatcher": []
         }
     ]
 }

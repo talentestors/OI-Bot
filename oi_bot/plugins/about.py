@@ -3,6 +3,7 @@
 # Created: 2025-03-13
 
 from nonebot import on_command
+from nonebot.log import logger
 from nonebot.rule import to_me
 
 
@@ -30,6 +31,7 @@ def get_about_msg(lang: str) -> str:
     机器人的仓库是：
     https://github.com/talentestors/OI-Bot
     """
+    logger.debug(f"lang of about_msg: {lang}")
     if lang not in ["cn", "en"]:
         lang = "en"
     ABOUT_MSG = """About the bot:

@@ -1,5 +1,5 @@
 import nonebot
-from nonebot.log import logger
+from nonebot.log import logger, default_format
 
 # 初始化 NoneBot
 nonebot.init()
@@ -9,6 +9,10 @@ driver = nonebot.get_driver()
 # 加载配置文件
 env_config = driver.config
 env_run_evironment = str(env_config.environment).strip()
+
+# 日志处理
+logger.add("log/error.log", level="ERROR", format=default_format, rotation="1 week")
+logger.add("log/oi-bot.log", level="INFO", format=default_format, rotation="1 week")
 
 # 注册适配器
 # ONEBOT 11 协议适配器
@@ -24,6 +28,7 @@ if env_config.onebot_access_token.strip() != "":
 if env_run_evironment == "dev":
     from nonebot.adapters.console import Adapter as ConsoleAdapter
 
+    logger.add("log/debug.log", level="DEBUG", format=default_format, rotation="1 week")
     bot_enable_console = env_config.bot_enable_console
     logger.debug(f"bot_enable_console={bot_enable_console}")
     if bot_enable_console is True:
