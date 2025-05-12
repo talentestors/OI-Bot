@@ -52,12 +52,12 @@ if bot_url_filter_enable:
         if api == "send_msg":
             if message := data.get("message"):
                 logger.debug(f"Original message: {message.__dict__}")
-                for i, text in enumerate(message):
+                for i, text in enumerate(message.content):
                     if isinstance(text, Text):
-                        logger.debug(f"Text object found {i}: {text.text}")
-                        text.text = filters.replace(text.text)
-                        logger.debug(f"Replaced text {i}: {text.text}")
+                        logger.debug(f"Text object found {i}: {message.content[i]}")
+                        message.content[i] = filters.replace(text.text)
+                        logger.debug(f"Replaced text {i}: {message.content[i]}")
                     if isinstance(text, str):
-                        logger.debug(f"String found {i}: {text}")
-                        text = filters.replace(text)
-                        logger.debug(f"Replaced str {i}: {text}")
+                        logger.debug(f"String found {i}: {message.content[i]}")
+                        message.content[i] = filters.replace(text)
+                        logger.debug(f"Replaced str {i}: {message.content[i]}")
