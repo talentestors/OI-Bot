@@ -46,48 +46,33 @@ if bot_url_filter_enable:
 
     logger.debug(f"filters: {filters}")
 
-    # OneBot V11: [MessageSegment(type='text', data={'text': 'About the bot:\n'})]
+    def filter_message_contents(contents: list[Any]) -> list[Any]:
+        new_list: list[Any] = []
+        for item in contents:
+            match item:
+                case Text():
+                    new_list.append(Text(filters.replace(item.text)))
+                case str():
+                    new_list.append(filters.replace(item))
+                case MessageSegment() if item.type == "text":
+                    item.data["text"] = filters.replace(item.data["text"])
+                    new_list.append(item)
+                case _:
+                    logger.error(f"Unknown message type: {type(item)}")
+                    raise TypeError(f"Unknown message type: {type(item)}")
+        return new_list
+
     @Bot.on_calling_api
     async def url_filter(bot: Bot, api: str, data: dict[str, Any]):
         logger.debug(f"API called: {api}, data: {data}")
-        if api == "send_msg":
-            if message := data.get("message"):
-                logger.debug(f"Original message: {message.__dict__}")
-                if isinstance(message, ConsoleMessage):
-                    for i, text in enumerate(message.content):
-                        if isinstance(text, Text):
-                            logger.debug(f"Text object found {i}: {text}")
-                            message.content[i] = Text(filters.replace(text.text))
-                            logger.debug(f"Replaced text {i}: {text}")
-                        elif isinstance(text, str):
-                            logger.debug(f"String found {i}: {text}")
-                            message.content[i] = filters.replace(text)
-                            logger.debug(f"Replaced str {i}: {text}")
-                        else:
-                            logger.error(f"Unknown message type: {type(text)}")
-                            raise TypeError(f"Unknown message type: {type(text)}")
-                elif isinstance(message, list):
-                    for i, text in enumerate(message):
-                        if isinstance(text, Text):
-                            logger.debug(f"Text object found {i}: {text}")
-                            message[i] = Text(filters.replace(text.text))
-                            logger.debug(f"Replaced text {i}: {text}")
-                        elif isinstance(text, str):
-                            logger.debug(f"String found {i}: {text}")
-                            message[i] = filters.replace(text)
-                            logger.debug(f"Replaced str {i}: {text}")
-                        elif isinstance(text, MessageSegment):
-                            segment_data = text.data
-                            if segment_data.get("type") == "text":
-                                logger.debug(f"MessageSegment found {i}: {text}")
-                                text.data["text"] = filters.replace(segment_data["text"])
-                                logger.debug(f"Replaced MessageSegment {i}: {text}")
-                            else:
-                                logger.error(f"Unknown message type: {type(text)}")
-                                raise TypeError(f"Unknown message type: {type(text)}")
-                        else:
-                            logger.error(f"Unknown message type: {type(text)}")
-                            raise TypeError(f"Unknown message type: {type(text)}")
-                else:
-                    logger.error(f"Unknown message type: {type(message)}")
-                    raise TypeError(f"Unknown message type: {type(message)}")
+        if api != "send_msg" or "message" not in data:
+            return
+        message = data["message"]
+        match message:
+            case ConsoleMessage():
+                message.content = filter_message_contents(message.content)
+            case list():
+                data["message"] = filter_message_contents(message)
+            case _:
+                logger.error(f"Unknown message type: {type(message)}")
+                raise TypeError(f"Unknown message type: {type(message)}")
