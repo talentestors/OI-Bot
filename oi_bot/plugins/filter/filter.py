@@ -29,7 +29,8 @@ class Filter(object):
 
     def replace(self, message):
         """
-        Replace the current filter strategy with a new one.
+        Apply the replace strategy to the provided message and return the result.
+        If no replace strategy is set, return the message unchanged.
         """
         if self.replace_strategy is None:
             return message
