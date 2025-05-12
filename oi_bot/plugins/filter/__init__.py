@@ -16,8 +16,8 @@
 
 import nonebot
 from typing import Any
-from nonebot.adapters import Bot
-from nonechat.message import Text
+from nonebot.adapters import Bot, MessageSegment
+from nonechat.message import ConsoleMessage, Text
 from nonebot.log import logger
 
 from .filter import Filter
@@ -46,18 +46,48 @@ if bot_url_filter_enable:
 
     logger.debug(f"filters: {filters}")
 
+    # OneBot V11: [MessageSegment(type='text', data={'text': 'About the bot:\n'})]
     @Bot.on_calling_api
     async def url_filter(bot: Bot, api: str, data: dict[str, Any]):
         logger.debug(f"API called: {api}, data: {data}")
         if api == "send_msg":
             if message := data.get("message"):
                 logger.debug(f"Original message: {message.__dict__}")
-                for i, text in enumerate(message.content):
-                    if isinstance(text, Text):
-                        logger.debug(f"Text object found {i}: {message.content[i]}")
-                        message.content[i] = filters.replace(text.text)
-                        logger.debug(f"Replaced text {i}: {message.content[i]}")
-                    if isinstance(text, str):
-                        logger.debug(f"String found {i}: {message.content[i]}")
-                        message.content[i] = filters.replace(text)
-                        logger.debug(f"Replaced str {i}: {message.content[i]}")
+                if isinstance(message, ConsoleMessage):
+                    for i, text in enumerate(message.content):
+                        if isinstance(text, Text):
+                            logger.debug(f"Text object found {i}: {text}")
+                            message.content[i] = Text(filters.replace(text.text))
+                            logger.debug(f"Replaced text {i}: {text}")
+                        elif isinstance(text, str):
+                            logger.debug(f"String found {i}: {text}")
+                            message.content[i] = filters.replace(text)
+                            logger.debug(f"Replaced str {i}: {text}")
+                        else:
+                            logger.error(f"Unknown message type: {type(text)}")
+                            raise TypeError(f"Unknown message type: {type(text)}")
+                elif isinstance(message, list):
+                    for i, text in enumerate(message):
+                        if isinstance(text, Text):
+                            logger.debug(f"Text object found {i}: {text}")
+                            message[i] = Text(filters.replace(text.text))
+                            logger.debug(f"Replaced text {i}: {text}")
+                        elif isinstance(text, str):
+                            logger.debug(f"String found {i}: {text}")
+                            message[i] = filters.replace(text)
+                            logger.debug(f"Replaced str {i}: {text}")
+                        elif isinstance(text, MessageSegment):
+                            segment_data = text.data
+                            if segment_data.get("type") == "text":
+                                logger.debug(f"MessageSegment found {i}: {text}")
+                                text.data["text"] = filters.replace(segment_data["text"])
+                                logger.debug(f"Replaced MessageSegment {i}: {text}")
+                            else:
+                                logger.error(f"Unknown message type: {type(text)}")
+                                raise TypeError(f"Unknown message type: {type(text)}")
+                        else:
+                            logger.error(f"Unknown message type: {type(text)}")
+                            raise TypeError(f"Unknown message type: {type(text)}")
+                else:
+                    logger.error(f"Unknown message type: {type(message)}")
+                    raise TypeError(f"Unknown message type: {type(message)}")
