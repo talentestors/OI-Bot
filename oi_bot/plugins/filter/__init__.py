@@ -77,10 +77,10 @@ if bot_url_filter_enable:
                             message[i] = filters.replace(text)
                             logger.debug(f"Replaced str {i}: {text}")
                         elif isinstance(text, MessageSegment):
-                            data = text.data
-                            if data.get("type") == "text":
+                            segment_data = text.data
+                            if segment_data.get("type") == "text":
                                 logger.debug(f"MessageSegment found {i}: {text}")
-                                text.data["text"] = filters.replace(data["text"])
+                                text.data["text"] = filters.replace(segment_data["text"])
                                 logger.debug(f"Replaced MessageSegment {i}: {text}")
                             else:
                                 logger.error(f"Unknown message type: {type(text)}")
