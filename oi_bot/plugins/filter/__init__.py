@@ -14,40 +14,50 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import nonebot
 from typing import Any
-import contextlib
 from nonebot.adapters import Bot
-from .filter import Filter
-from .strategy import ReplaceStrategyReplaceWithRegex
+from nonechat.message import Text
 from nonebot.log import logger
 
+from .filter import Filter
 
-def replace_func(match):
-    header = match.group(1) or ""
-    host = match.group(2)
-    host = host.rstrip("_").replace(".", "_")
-    port = match.group(3) or ""
-    path = match.group(4) or ""
-    return f"{header}{host}{port}{path}"
+env_config = nonebot.get_driver().config
 
+# BOT_URL_FILTER_ENABLE
+bot_url_filter_enable: bool = env_config.bot_url_filter_enable
 
-replace_strategy = ReplaceStrategyReplaceWithRegex(
-    r"^(https?://)?([a-zA-Z0-9._-]+)(:[0-9]+)?(/.*)?", replace_func
-)
+if bot_url_filter_enable:
+    from .strategy import ReplaceStrategyReplaceWithRegex
 
-filters = Filter(strategy_of_replace=replace_strategy)
+    def replace_func(match):
+        header = match.group(1) or ""
+        host = match.group(2)
+        host = host.rstrip("_").replace(".", "_")
+        port = match.group(3) or ""
+        path = match.group(4) or ""
+        return f"{header}{host}{port}{path}"
 
+    replace_strategy = ReplaceStrategyReplaceWithRegex(
+        r"(https?://)([a-zA-Z0-9._\-]+)(:\d+)?(/[^\s]*)?", replace_func
+    )
 
-@Bot.on_calling_api
-async def handle_filter_call(bot: Bot, api: str, data: dict[str, Any]):
-    with contextlib.suppress(Exception):
-        if api not in ["send_msg", "send_message"]:
-            return
-        if len(data["message"]) != 1 or data["message"][0].type != "text":
-            return
-        text = str(data["message"][0].data["text"])
-        logger.debug(f"Original message: {text}")
-        # 处理文本消息
-        new_message = filters.replace(text)
-        logger.debug(f"Replaced message: {new_message}")
-        data["message"] = new_message
+    filters = Filter(strategy_of_replace=replace_strategy)
+
+    logger.debug(f"filters: {filters}")
+
+    @Bot.on_calling_api
+    async def url_filter(bot: Bot, api: str, data: dict[str, Any]):
+        logger.debug(f"API called: {api}, data: {data}")
+        if api == "send_msg":
+            if message := data.get("message"):
+                logger.debug(f"Original message: {message.__dict__}")
+                for text in message:
+                    if isinstance(text, Text):
+                        logger.debug(f"Text object found: {text.text}")
+                        text.text = filters.replace(text.text)
+                        logger.debug(f"Replaced text: {text.text}")
+                    if isinstance(text, str):
+                        logger.debug(f"String found: {text}")
+                        text = filters.replace(text)
+                        logger.debug(f"Replaced str: {text}")
