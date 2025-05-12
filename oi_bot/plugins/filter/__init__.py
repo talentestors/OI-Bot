@@ -14,7 +14,6 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from re import L
 from typing import Any
 import contextlib
 from nonebot.adapters import Bot
@@ -40,15 +39,15 @@ filters = Filter(strategy_of_replace=replace_strategy)
 
 
 @Bot.on_calling_api
-async def handle_filter(bot: Bot, api: str, data: dict[str, Any]):
+async def handle_filter_call(bot: Bot, api: str, data: dict[str, Any]):
     with contextlib.suppress(Exception):
-        # if api not in ["send_msg", "send_message"]:
-        #     return
-        # if len(data["message"]) != 1 or data["message"][0].type != "text":
-        #     return
+        if api not in ["send_msg", "send_message"]:
+            return
+        if len(data["message"]) != 1 or data["message"][0].type != "text":
+            return
         text = str(data["message"][0].data["text"])
-        logger.info(f"handle_filter: {text}")
+        logger.debug(f"Original message: {text}")
         # 处理文本消息
         new_message = filters.replace(text)
-        logger.info(f"handle_filter: {new_message}")
+        logger.debug(f"Replaced message: {new_message}")
         data["message"] = new_message
