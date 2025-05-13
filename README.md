@@ -85,3 +85,5 @@ This project includes software from the following sources:
    - <https://www.gnu.org/licenses/agpl-3.0.html>
 4. [nonebot-plugin-neuro-draw](https://github.com/zhaomaoniu/nonebot-plugin-neuro-draw)
    - Licensed under the MIT License
+
+![AGPL-V3](https://www.gnu.org/graphics/agplv3-88x31.png)
