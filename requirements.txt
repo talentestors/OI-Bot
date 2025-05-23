@@ -28,7 +28,7 @@ attrs==25.3.0
     # via aiohttp
 brotli==1.1.0
     # via aiohttp
-click==8.2.0
+click==8.2.1
     # via uvicorn
 colorama==0.4.6
     # via
