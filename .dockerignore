@@ -9,6 +9,7 @@ __pycache__/
 *.toml
 !pyproject.toml
 *.sh
+!start-bot.sh
 tests/
 *.txt
 !requirements.txt
