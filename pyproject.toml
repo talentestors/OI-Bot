@@ -13,6 +13,7 @@ dependencies = [
     "nonebot-adapter-onebot>=2.4.6",
     "nonebot-plugin-oi-helper>=0.7.0",
     "nonebot-plugin-neuro-draw>=0.1.0",
+    "nonebot-plugin-alconna>=0.57.6",
 ]
 
 [dependency-groups]
