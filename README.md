@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo](./docs/images/atri-256x256.png)
+![logo](https://raw.githubusercontent.com/talentestors/OI-Bot/main/docs/images/atri-256x256.png)
 
 # ✨ OI-Bot | 高性能ですから！✨
 
