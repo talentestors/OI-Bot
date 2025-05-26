@@ -21,9 +21,12 @@ RUN mkdir -p log && \
 
 RUN [ -f .env ] || cp .env.example .env
 
+# Make start script executable
+RUN chmod +x start-bot.sh
+
 # Switch to non-privileged user
 USER oi-bot
 
 EXPOSE 8024
 
-CMD ["/bin/bash", "-c", "source .venv/bin/activate && python bot.py"]
+CMD ["./start-bot.sh"]
