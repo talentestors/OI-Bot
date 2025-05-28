@@ -1,6 +1,6 @@
 [project]
 name = "oi-bot"
-version = "2.4.0"
+version = "2.4.1"
 description = "This chatbot provides match information for OIer and ACMer, based on the Nonebot2 framework."
 readme = "README.md"
 requires-python = ">=3.12, <4.0"
@@ -21,7 +21,7 @@ dev = [
     "nb-cli>=1.4.2",
     "nonebot-adapter-console>=0.6.0",
     "nonebot-plugin-docs>=2.4.2",
-    "pip>=24.3.1",
+    "pip>=25.1.0",
 ]
 test = [
     "nonebug>=0.4.3",

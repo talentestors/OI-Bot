@@ -65,7 +65,7 @@ multidict==6.4.4
     # via
     #   aiohttp
     #   yarl
-nepattern==1.0.1
+nepattern==0.7.7
     # via
     #   arclet-alconna
     #   arclet-alconna-tools
@@ -115,7 +115,7 @@ pydantic==2.11.5
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.34.1
+pydantic-core==2.33.2
     # via pydantic
 pygtrie==2.5.0
     # via nonebot2
