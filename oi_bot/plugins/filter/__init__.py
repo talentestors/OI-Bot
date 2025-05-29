@@ -16,8 +16,6 @@
 
 import nonebot
 from typing import Any
-from nonebot.adapters import Bot, MessageSegment
-from nonechat.message import ConsoleMessage, Text
 from nonebot.log import logger
 
 from .filter import Filter
@@ -28,6 +26,8 @@ env_config = nonebot.get_driver().config
 bot_url_filter_enable: bool = env_config.bot_url_filter_enable
 
 if bot_url_filter_enable:
+    from nonebot.adapters import Bot, MessageSegment
+    from nonechat.message import ConsoleMessage, Text
     from .strategy import ReplaceStrategyReplaceWithRegex
 
     def replace_func(match):
