@@ -21,6 +21,8 @@ RUN mkdir -p log && \
 
 # Create and set permissions for nonebot2 plugin directories and home directory
 RUN mkdir -p /home/oi-bot && \
+    mkdir -p /home/oi-bot/.cache/nonebot2 && \
+    mkdir -p /home/oi-bot/.local/share/nonebot2 && \
     chown -R oi-bot:oi-bot /home/oi-bot && \
     chmod -R 755 /home/oi-bot
 
