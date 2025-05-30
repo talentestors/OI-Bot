@@ -19,6 +19,11 @@ COPY . /app
 RUN mkdir -p log && \
     chown -R oi-bot:oi-bot /app
 
+# Create and set permissions for nonebot2 plugin directories and home directory
+RUN mkdir -p /home/oi-bot && \
+    chown -R oi-bot:oi-bot /home/oi-bot && \
+    chmod -R 755 /home/oi-bot
+
 RUN [ -f .env ] || cp .env.example .env
 
 # Make start script executable
