@@ -154,7 +154,7 @@ tzdata==2025.2
     # via tzlocal
 tzlocal==5.3.1
     # via apscheduler
-uvicorn==0.34.2
+uvicorn==0.34.3
     # via nonebot2
 watchfiles==1.0.5
     # via uvicorn
