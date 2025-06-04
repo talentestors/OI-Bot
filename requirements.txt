@@ -134,7 +134,7 @@ tarina==0.6.8
     #   arclet-alconna
     #   nepattern
     #   nonebot-plugin-alconna
-typing-extensions==4.13.2
+typing-extensions==4.14.0
     # via
     #   anyio
     #   arclet-alconna
