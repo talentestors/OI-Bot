@@ -4,7 +4,7 @@ aiodns==3.4.0
     # via aiohttp
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.12.11
+aiohttp==3.12.12
     # via
     #   nonebot-plugin-neuro-draw
     #   nonebot-plugin-oi-helper
