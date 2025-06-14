@@ -59,7 +59,7 @@ importlib-metadata==8.7.0
     # via nonebot-plugin-alconna
 loguru==0.7.3
     # via nonebot2
-msgpack==1.1.0
+msgpack==1.1.1
     # via nonebot-adapter-onebot
 multidict==6.4.4
     # via
