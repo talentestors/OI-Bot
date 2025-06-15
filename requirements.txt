@@ -156,7 +156,7 @@ tzlocal==5.3.1
     # via apscheduler
 uvicorn==0.34.3
     # via nonebot2
-watchfiles==1.0.5
+watchfiles==1.1.0
     # via uvicorn
 websockets==15.0.1
     # via uvicorn
