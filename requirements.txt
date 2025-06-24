@@ -119,7 +119,7 @@ pydantic-core==2.35.1
     # via pydantic
 pygtrie==2.5.0
     # via nonebot2
-python-dotenv==1.1.0
+python-dotenv==1.1.1
     # via
     #   nonebot2
     #   uvicorn
