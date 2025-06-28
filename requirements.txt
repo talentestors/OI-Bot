@@ -115,7 +115,7 @@ pydantic==2.11.7
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.35.1
+pydantic-core==2.35.2
     # via pydantic
 pygtrie==2.5.0
     # via nonebot2
