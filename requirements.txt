@@ -29,7 +29,9 @@ arclet-alconna-tools==0.7.10
 attrs==25.3.0
     # via aiohttp
 brotli==1.1.0
-    # via aiohttp
+    # via
+    #   aiohttp
+    #   nonebot-plugin-oi-helper
 cffi==1.17.1
     # via pycares
 click==8.2.1
@@ -84,7 +86,7 @@ nonebot-plugin-localstore==0.7.4
     #   nonebot-plugin-oi-helper
 nonebot-plugin-neuro-draw==0.1.0
     # via oi-bot (pyproject.toml)
-nonebot-plugin-oi-helper==0.7.1
+nonebot-plugin-oi-helper==0.7.3
     # via oi-bot (pyproject.toml)
 nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
@@ -136,6 +138,7 @@ tarina==0.6.8
     #   nonebot-plugin-alconna
 typing-extensions==4.14.1
     # via
+    #   aiosignal
     #   anyio
     #   arclet-alconna
     #   exceptiongroup
