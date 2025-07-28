@@ -839,16 +839,16 @@ wheels = [
 
 [[package]]
 name = "nonebot-adapter-console"
-version = "0.7.1"
+version = "0.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "nonebot2" },
     { name = "nonechat" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/ae/802109d5ba4c6ca9a2bab7ad2a89c4c50ffa5274978a5428a17b10e118f4/nonebot_adapter_console-0.7.1.tar.gz", hash = "sha256:b98e5d25a7efe0505cdb9f0727007835e9aff99fc2132727e55dc1ce211ff41c", size = 7123, upload-time = "2025-07-11T16:00:21.346Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/10/38/94ae8349fbed019b4aca74e916df37d5678e04641eb24098f7c5caa50265/nonebot_adapter_console-0.9.0.tar.gz", hash = "sha256:d68ee2d2960575d729c81fd5d94d9a52425758e366ec4fc5b8c675a874caed1a", size = 8953, upload-time = "2025-07-25T14:59:02.368Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/2b/e0/598c0ff4c5775daf9e3a0ce818e46909e19e8121b43dc26c8e0ca596c856/nonebot_adapter_console-0.7.1-py3-none-any.whl", hash = "sha256:7839a617cf1515c5198cfc08312551e83dc7d8f8a071df564210a03a9f55d882", size = 9727, upload-time = "2025-07-11T16:00:20.402Z" },
+    { url = "https://files.pythonhosted.org/packages/64/5d/450172177e95e0082ef02bda6885e2566ebf618a5d3fdc7cdedcfc0f0932/nonebot_adapter_console-0.9.0-py3-none-any.whl", hash = "sha256:1f41b53a6ffdcef8c0cfe69e3675158b36792db4fb04163931d48fc052f1ad04", size = 11268, upload-time = "2025-07-25T14:59:01.609Z" },
 ]
 
 [[package]]
@@ -868,7 +868,7 @@ wheels = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.59.0"
+version = "0.59.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "arclet-alconna" },
@@ -879,9 +879,9 @@ dependencies = [
     { name = "nonebot2" },
     { name = "tarina" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8d/8e/acacd87b46a1617ed5f50df0f6d5a954f3af34ce2cb57fb8b619ae679a25/nonebot_plugin_alconna-0.59.0.tar.gz", hash = "sha256:9d164ce3fc6e46c211582a5a4e00fd033e397d5afcb5b54b88f39c8a9fcdb368", size = 151971, upload-time = "2025-07-07T09:43:14.662Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b8/60/c667dec37ecc3d5462ed41cca08d96ae76ac51cffbc02d041fa7b88adc77/nonebot_plugin_alconna-0.59.1.tar.gz", hash = "sha256:2f45d0fe5133d5484e6d575ae80d39d5e646d5b01c21b9a2e07093ad4c337e4a", size = 152458, upload-time = "2025-07-25T15:25:45.153Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/88/1d/979c6cf5f20a35cafaa88c3f1f24e2d68d798850186298d21ec601b150eb/nonebot_plugin_alconna-0.59.0-py3-none-any.whl", hash = "sha256:b84e3f8cb5eb7f4ead7e6aca91488d3df8077ea8d93c78fdfbb76b42cd60a483", size = 209340, upload-time = "2025-07-07T09:43:13.261Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/aa/a2c254746e0a5302a86c15cd20c33f55b64e2cea1a59a5ed2dd3b4cda801/nonebot_plugin_alconna-0.59.1-py3-none-any.whl", hash = "sha256:08648607fc70b49fd4279fe006736f3de0a32f71ef21a166332c70c6a1080beb", size = 209818, upload-time = "2025-07-25T15:25:43.617Z" },
 ]
 
 [[package]]
@@ -1014,14 +1014,14 @@ wheels = [
 
 [[package]]
 name = "nonechat"
-version = "0.4.3"
+version = "0.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "textual" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/80/bc/aaf75c1e9ede96af824e713b9f628fc777b058af301712a10f852ab83d57/nonechat-0.4.3.tar.gz", hash = "sha256:a7c9472793f24d58a89505dafa512ec8c6ff925c7a6b604012d995f98a977a8d", size = 15649, upload-time = "2025-07-09T18:30:36.921Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/14/4ef5d6b9569315a36160cbb4f43837ba1452df08229fa47654928111f7a3/nonechat-0.6.1.tar.gz", hash = "sha256:4cf39badc4af1ebf72062dac879bd8f0a0063ce4f8e53e9679988b2ec6667117", size = 19294, upload-time = "2025-07-24T06:57:45.696Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9c/d3/ad9c01c29d861950d22fdb877f9c14bfa27d7b70c714167da85e142b0e4a/nonechat-0.4.3-py3-none-any.whl", hash = "sha256:59325928bebd6052ff68e3956434ed23486c1bce0c63c5e39c9a52b49d095524", size = 24016, upload-time = "2025-07-09T18:30:36.065Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/d5/8f30606713bea1d862477c67f5f4c8bda562c752d72321630b6269cd920f/nonechat-0.6.1-py3-none-any.whl", hash = "sha256:899f26416e01cc0f3beb4798e8ce73a47bac4627b610a0609fe07f6d8246bf0c", size = 28454, upload-time = "2025-07-24T06:57:44.226Z" },
 ]
 
 [[package]]
@@ -1435,15 +1435,15 @@ wheels = [
 
 [[package]]
 name = "rich"
-version = "14.0.0"
+version = "14.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py" },
     { name = "pygments" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a1/53/830aa4c3066a8ab0ae9a9955976fb770fe9c6102117c8ec4ab3ea62d89e8/rich-14.0.0.tar.gz", hash = "sha256:82f1bc23a6a21ebca4ae0c45af9bdbc492ed20231dcb63f297d6d1021a9d5725", size = 224078, upload-time = "2025-03-30T14:15:14.23Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/75/af448d8e52bf1d8fa6a9d089ca6c07ff4453d86c65c145d0a300bb073b9b/rich-14.1.0.tar.gz", hash = "sha256:e497a48b844b0320d45007cdebfeaeed8db2a4f4bcf49f15e455cfc4af11eaa8", size = 224441, upload-time = "2025-07-25T07:32:58.125Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl", hash = "sha256:1c9491e1951aac09caffd42f448ee3d04e58923ffe14993f6e83068dc395d7e0", size = 243229, upload-time = "2025-03-30T14:15:12.283Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/30/3c4d035596d3cf444529e0b2953ad0466f6049528a879d27534700580395/rich-14.1.0-py3-none-any.whl", hash = "sha256:536f5f1785986d6dbdea3c75205c473f970777b4a0d6c6dd1b696aa05a3fa04f", size = 243368, upload-time = "2025-07-25T07:32:56.73Z" },
 ]
 
 [[package]]
