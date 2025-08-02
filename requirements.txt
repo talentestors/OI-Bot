@@ -34,7 +34,7 @@ brotli==1.1.0
     #   nonebot-plugin-oi-helper
 cffi==1.17.1
     # via pycares
-click==8.2.1
+click==8.2.2
     # via uvicorn
 colorama==0.4.6
     # via
