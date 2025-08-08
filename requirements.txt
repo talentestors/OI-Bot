@@ -74,7 +74,7 @@ nepattern==1.0.1
     #   nonebot-plugin-alconna
 nonebot-adapter-onebot==2.4.6
     # via oi-bot (pyproject.toml)
-nonebot-plugin-alconna==0.59.3
+nonebot-plugin-alconna==0.59.4
     # via
     #   oi-bot (pyproject.toml)
     #   nonebot-plugin-neuro-draw
