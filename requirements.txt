@@ -90,7 +90,7 @@ nonebot-plugin-oi-helper==0.7.3
     # via oi-bot (pyproject.toml)
 nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
-nonebot2==2.4.2
+nonebot2==2.4.3
     # via
     #   oi-bot (pyproject.toml)
     #   nonebot-adapter-onebot
