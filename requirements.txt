@@ -24,7 +24,7 @@ arclet-alconna==1.8.43
     # via
     #   arclet-alconna-tools
     #   nonebot-plugin-alconna
-arclet-alconna-tools==0.7.11
+arclet-alconna-tools==0.7.12
     # via nonebot-plugin-alconna
 attrs==25.3.0
     # via aiohttp
