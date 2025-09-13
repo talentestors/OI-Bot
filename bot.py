@@ -56,11 +56,18 @@ nonebot.load_plugin("nonebot_plugin_neuro_draw")  # neuro-draw
 nonebot.load_plugin("nonebot_plugin_whateat_pic")  # whateat-pic
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
 
-# config 注入
-import nonebot_plugin_localstore as store  # noqa: E402
-import nonebot_plugin_whateat_pic.config as whatpic  # noqa: E402
 
-whatpic.config.whatpic_res_path = str(store.get_data_dir("nonebot_plugin_whateat_pic"))
+# config 注入
+def set_config():
+    """配置注入"""
+    import nonebot_plugin_localstore as store
+    import nonebot_plugin_whateat_pic.config as whatpic
+
+    whatpic.config.whatpic_res_path = str(
+        store.get_data_dir("nonebot_plugin_whateat_pic")
+    )
+
 
 if __name__ == "__main__":
+    set_config()
     nonebot.run()
