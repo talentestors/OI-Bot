@@ -1,0 +1,68 @@
+additionalProperties:
+  formFields:
+    - default: 0.0.0.0
+      edit: false
+      envKey: HOST
+      labelEn: HOST
+      labelZh: 监听地址
+      required: true
+      type: text
+    - default: 8024
+      edit: true
+      envKey: PORT
+      labelEn: Linear port
+      labelZh: 监听端口
+      required: true
+      type: number
+      rule: paramPort
+    - default: "INFO"
+      edit: true
+      envKey: LOG_LEVEL
+      labelEn: Log level
+      labelZh: 日志级别
+      required: true
+      type: select
+      values:
+        - label: DEBUG
+          value: "DEBUG"
+        - label: INFO
+          value: "INFO"
+        - label: WARNING
+          value: "WARNING"
+        - label: ERROR
+          value: "ERROR"
+        - label: CRITICAL
+          value: "CRITICAL"
+    - default: ''
+      edit: true
+      envKey: ONEBOT_ACCESS_TOKEN
+      labelEn: ONEBOT_ACCESS_TOKEN
+      labelZh: OneBot 11 协议配置
+      required: true
+      type: text
+    - default: talentestors
+      edit: true
+      envKey: CLIST__USERNAME
+      labelEn: CLIST__USERNAME
+      labelZh: CLIST username 配置
+      required: false
+      type: text
+    - default: b4c1d76de149ef89cf0542b59a567f7c6b4af952
+      edit: true
+      envKey: CLIST__USER_KEY
+      labelEn: CLIST__USER_KEY
+      labelZh: CLIST userkey 配置
+      required: false
+      type: text
+    - default: 'false'
+      edit: true
+      envKey: BOT_URL_FILTER_ENABLE
+      labelEn: BOT_URL_FILTER_ENABLE
+      labelZh: BOT_URL_FILTER_ENABLE 配置
+      required: false
+      type: select
+      values:
+        - label: Open
+          value: "true"
+        - label: Close
+          value: "false"
