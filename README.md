@@ -90,3 +90,5 @@ This project includes software from the following sources:
    - Copyright (C) 2021 nonebot
 5. [nonebot-plugin-neuro-draw](https://github.com/zhaomaoniu/nonebot-plugin-neuro-draw)
    - Licensed under the MIT License
+6. [nonebot-plugin-whateat-pic](https://github.com/Cvandia/nonebot-plugin-whateat-pic)
+   - Licensed under the MIT License

@@ -2,7 +2,7 @@ import nonebot
 from nonebot.log import logger, default_format
 
 # 定义版本信息
-__version__ = "2.5.1"
+__version__ = "2.5.2"
 VERSION_INFO = f"OI-Bot v{__version__}"
 
 # 初始化 NoneBot
@@ -55,6 +55,12 @@ nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi-helper
 nonebot.load_plugin("nonebot_plugin_neuro_draw")  # neuro-draw
 nonebot.load_plugin("nonebot_plugin_whateat_pic")  # whateat-pic
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
+
+# config 注入
+import nonebot_plugin_localstore as store  # noqa: E402
+import nonebot_plugin_whateat_pic.config as whatpic  # noqa: E402
+
+whatpic.config.whatpic_res_path = str(store.get_data_dir("nonebot_plugin_whateat_pic"))
 
 if __name__ == "__main__":
     nonebot.run()
