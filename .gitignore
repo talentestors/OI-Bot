@@ -182,3 +182,6 @@ cython_debug/
 
 *.txt
 !requirements.txt
+
+### plugins/nonebot_plugin_whateat_pic/.gitignore ###
+data/
