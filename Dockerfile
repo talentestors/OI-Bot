@@ -7,7 +7,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --no-dev --link-mode=hardlink
+    uv sync --no-dev --frozen --link-mode=copy
 
 COPY . /app
 
