@@ -2,7 +2,7 @@ import nonebot
 from nonebot.log import logger, default_format
 
 # 定义版本信息
-__version__ = "2.5.0"
+__version__ = "2.5.1"
 VERSION_INFO = f"OI-Bot v{__version__}"
 
 # 初始化 NoneBot
@@ -15,6 +15,7 @@ driver = nonebot.get_driver()
 
 # 加载配置文件
 env_config = driver.config
+driver.config.nickname.add("アトリ")
 env_run_evironment = str(env_config.environment).strip()
 
 # 日志处理
@@ -52,6 +53,7 @@ if env_run_evironment == "dev":
 # 默认环境下
 nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi-helper
 nonebot.load_plugin("nonebot_plugin_neuro_draw")  # neuro-draw
+nonebot.load_plugin("nonebot_plugin_whateat_pic")  # whateat-pic
 nonebot.load_plugins("oi_bot/plugins")  # 加载插件
 
 if __name__ == "__main__":
