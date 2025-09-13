@@ -2,7 +2,7 @@ import nonebot
 from nonebot.log import logger, default_format
 
 # 定义版本信息
-__version__ = "2.4.4"
+__version__ = "2.5.0"
 VERSION_INFO = f"OI-Bot v{__version__}"
 
 # 初始化 NoneBot
@@ -46,8 +46,8 @@ if env_run_evironment == "dev":
         nonebot.load_builtin_plugin("echo")  # 内置插件
         logger.info("已加载 echo 插件")
 
-# if env_run_evironment == "dev":
-# nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
+if env_run_evironment == "dev":
+    nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
 
 # 默认环境下
 nonebot.load_plugin("nonebot_plugin_oi_helper")  # oi-helper

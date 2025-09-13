@@ -14,6 +14,7 @@ dependencies = [
     "nonebot-plugin-oi-helper>=0.7.3",
     "nonebot-plugin-neuro-draw>=0.1.0",
     "nonebot-plugin-alconna>=0.57.6",
+    "nonebot-plugin-whateat-pic>=1.5.5",
 ]
 
 [dependency-groups]
