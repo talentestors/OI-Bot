@@ -1,0 +1,14 @@
+additionalProperties:
+  key: oi-bot
+  name: OI-Bot
+  tags:
+    - Tool
+    - Local
+  shortDescZh: 基于 Nonebot2 框架的 Bot，为 OI 和 ACM 选手提供比赛信息。
+  shortDescEn: This chatbot provides match information for OIer and ACMer, based on the Nonebot2 framework.
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/talentestors/OI-Bot/
+  github: https://github.com/talentestors/OI-Bot/
+  document: https://github.com/talentestors/OI-Bot/blob/main/README.md
