@@ -2,7 +2,7 @@ import nonebot
 from nonebot.log import logger, default_format
 
 # 定义版本信息
-__version__ = "2.5.3"
+__version__ = "2.5.4"
 VERSION_INFO = f"OI-Bot v{__version__}"
 
 # 初始化 NoneBot

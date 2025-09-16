@@ -15,16 +15,17 @@ annotated-types==0.7.0
     # via pydantic
 anyio==4.10.0
     # via
+    #   httpx
     #   nonebot2
     #   starlette
     #   watchfiles
 apscheduler==3.11.0
     # via nonebot-plugin-apscheduler
-arclet-alconna==1.8.43
+arclet-alconna==1.8.40
     # via
     #   arclet-alconna-tools
     #   nonebot-plugin-alconna
-arclet-alconna-tools==0.7.12
+arclet-alconna-tools==0.7.11
     # via nonebot-plugin-alconna
 attrs==25.3.0
     # via aiohttp
@@ -32,6 +33,10 @@ brotli==1.1.0
     # via
     #   aiohttp
     #   nonebot-plugin-oi-helper
+certifi==2025.8.3
+    # via
+    #   httpcore
+    #   httpx
 cffi==2.0.0
     # via pycares
 click==8.2.1
@@ -50,24 +55,35 @@ frozenlist==1.7.0
     #   aiohttp
     #   aiosignal
 h11==0.16.0
-    # via uvicorn
+    # via
+    #   httpcore
+    #   uvicorn
+httpcore==1.0.9
+    # via httpx
 httptools==0.6.4
     # via uvicorn
+httpx==0.28.1
+    # via nonebot-plugin-whateat-pic
 idna==3.10
     # via
     #   anyio
+    #   httpx
     #   yarl
 importlib-metadata==8.7.0
     # via nonebot-plugin-alconna
 loguru==0.7.3
     # via nonebot2
+markdown-it-py==4.0.0
+    # via rich
+mdurl==0.1.2
+    # via markdown-it-py
 msgpack==1.1.1
     # via nonebot-adapter-onebot
 multidict==6.6.4
     # via
     #   aiohttp
     #   yarl
-nepattern==1.0.1
+nepattern==0.7.7
     # via
     #   arclet-alconna
     #   arclet-alconna-tools
@@ -78,8 +94,11 @@ nonebot-plugin-alconna==0.59.4
     # via
     #   oi-bot (pyproject.toml)
     #   nonebot-plugin-neuro-draw
+    #   nonebot-plugin-whateat-pic
 nonebot-plugin-apscheduler==0.5.0
-    # via nonebot-plugin-oi-helper
+    # via
+    #   nonebot-plugin-oi-helper
+    #   nonebot-plugin-whateat-pic
 nonebot-plugin-localstore==0.7.4
     # via
     #   nonebot-plugin-neuro-draw
@@ -90,6 +109,8 @@ nonebot-plugin-oi-helper==0.7.3
     # via oi-bot (pyproject.toml)
 nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
+nonebot-plugin-whateat-pic==1.5.6
+    # via oi-bot (pyproject.toml)
 nonebot2==2.4.3
     # via
     #   oi-bot (pyproject.toml)
@@ -100,8 +121,11 @@ nonebot2==2.4.3
     #   nonebot-plugin-neuro-draw
     #   nonebot-plugin-oi-helper
     #   nonebot-plugin-waiter
+    #   nonebot-plugin-whateat-pic
 nonestorage==0.1.0
     # via nonebot-plugin-localstore
+pillow==11.3.0
+    # via nonebot-plugin-whateat-pic
 propcache==0.3.2
     # via
     #   aiohttp
@@ -117,8 +141,10 @@ pydantic==2.11.9
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.39.0
+pydantic-core==2.33.2
     # via pydantic
+pygments==2.19.2
+    # via rich
 pygtrie==2.5.0
     # via nonebot2
 python-dotenv==1.1.1
@@ -127,11 +153,13 @@ python-dotenv==1.1.1
     #   uvicorn
 pyyaml==6.0.2
     # via uvicorn
+rich==13.9.4
+    # via nonebot-plugin-whateat-pic
 sniffio==1.3.1
     # via anyio
-starlette==0.48.0
+starlette==0.47.3
     # via fastapi
-tarina==0.7.3
+tarina==0.6.8
     # via
     #   arclet-alconna
     #   nepattern
@@ -149,6 +177,7 @@ typing-extensions==4.15.0
     #   nonebot2
     #   pydantic
     #   pydantic-core
+    #   starlette
     #   tarina
     #   typing-inspection
 typing-inspection==0.4.1
