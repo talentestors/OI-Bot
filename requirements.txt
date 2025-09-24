@@ -109,7 +109,7 @@ nonebot-plugin-oi-helper==0.7.3
     # via oi-bot (pyproject.toml)
 nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
-nonebot-plugin-whateat-pic==1.5.6
+nonebot-plugin-whateat-pic==1.5.7
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.3
     # via
