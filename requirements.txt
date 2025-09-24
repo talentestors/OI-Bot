@@ -21,11 +21,11 @@ anyio==4.11.0
     #   watchfiles
 apscheduler==3.11.0
     # via nonebot-plugin-apscheduler
-arclet-alconna==1.8.43
+arclet-alconna==1.8.40
     # via
     #   arclet-alconna-tools
     #   nonebot-plugin-alconna
-arclet-alconna-tools==0.7.12
+arclet-alconna-tools==0.7.11
     # via nonebot-plugin-alconna
 attrs==25.3.0
     # via aiohttp
@@ -83,7 +83,7 @@ multidict==6.6.4
     # via
     #   aiohttp
     #   yarl
-nepattern==1.0.1
+nepattern==0.7.7
     # via
     #   arclet-alconna
     #   arclet-alconna-tools
@@ -103,13 +103,14 @@ nonebot-plugin-localstore==0.7.4
     # via
     #   nonebot-plugin-neuro-draw
     #   nonebot-plugin-oi-helper
+    #   nonebot-plugin-whateat-pic
 nonebot-plugin-neuro-draw==0.1.0
     # via oi-bot (pyproject.toml)
 nonebot-plugin-oi-helper==0.7.3
     # via oi-bot (pyproject.toml)
 nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
-nonebot-plugin-whateat-pic==1.5.6
+nonebot-plugin-whateat-pic==1.5.7
     # via oi-bot (pyproject.toml)
 nonebot2==2.4.3
     # via
@@ -141,7 +142,7 @@ pydantic==2.11.9
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.39.0
+pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.2
     # via rich
@@ -153,13 +154,13 @@ python-dotenv==1.1.1
     #   uvicorn
 pyyaml==6.0.2
     # via uvicorn
-rich==14.1.0
+rich==13.9.4
     # via nonebot-plugin-whateat-pic
 sniffio==1.3.1
     # via anyio
 starlette==0.48.0
     # via fastapi
-tarina==0.7.3
+tarina==0.6.8
     # via
     #   arclet-alconna
     #   nepattern
