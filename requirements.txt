@@ -152,7 +152,7 @@ python-dotenv==1.1.1
     # via
     #   nonebot2
     #   uvicorn
-pyyaml==6.0.2
+pyyaml==6.0.3
     # via uvicorn
 rich==14.1.0
     # via nonebot-plugin-whateat-pic
