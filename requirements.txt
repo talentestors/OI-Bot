@@ -142,7 +142,7 @@ pydantic==2.11.9
     #   nonebot-plugin-apscheduler
     #   nonebot-plugin-localstore
     #   nonebot2
-pydantic-core==2.33.2
+pydantic-core==2.39.0
     # via pydantic
 pygments==2.19.2
     # via rich
