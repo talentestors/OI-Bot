@@ -135,7 +135,7 @@ pycares==4.11.0
     # via aiodns
 pycparser==2.23
     # via cffi
-pydantic==2.11.9
+pydantic==2.11.10
     # via
     #   fastapi
     #   nonebot-adapter-onebot
