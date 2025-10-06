@@ -127,7 +127,7 @@ nonestorage==0.1.0
     # via nonebot-plugin-localstore
 pillow==11.3.0
     # via nonebot-plugin-whateat-pic
-propcache==0.3.2
+propcache==0.4.0
     # via
     #   aiohttp
     #   yarl
