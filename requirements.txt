@@ -27,7 +27,7 @@ arclet-alconna==1.8.43
     #   nonebot-plugin-alconna
 arclet-alconna-tools==0.7.12
     # via nonebot-plugin-alconna
-attrs==25.3.0
+attrs==25.4.0
     # via aiohttp
 brotli==1.1.0
     # via
