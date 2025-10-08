@@ -195,7 +195,7 @@ websockets==15.0.1
     # via uvicorn
 win32-setctime==1.2.0
     # via loguru
-yarl==1.20.1
+yarl==1.22.0
     # via
     #   aiohttp
     #   nonebot2
