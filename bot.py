@@ -2,7 +2,7 @@ import nonebot
 from nonebot.log import logger, default_format
 
 # 定义版本信息
-__version__ = "2.5.6"
+__version__ = "2.5.7"
 VERSION_INFO = f"OI-Bot v{__version__}"
 
 # 初始化 NoneBot
@@ -21,6 +21,7 @@ env_run_evironment = str(env_config.environment).strip()
 # 日志处理
 logger.add("log/error.log", level="ERROR", format=default_format, rotation="1 week")
 logger.add("log/oi-bot.log", level="INFO", format=default_format, rotation="1 week")
+
 # dev 环境下
 if env_run_evironment == "dev":
     logger.add("log/debug.log", level="DEBUG", format=default_format, rotation="1 week")
