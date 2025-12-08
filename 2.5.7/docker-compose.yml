@@ -13,6 +13,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - LOG_LEVEL=${LOG_LEVEL}
+      - ENVIRONMENT=${LOG_LEVEL}
       - CLIST__USERNAME=${CLIST__USERNAME}
       - CLIST__USER_KEY=${CLIST__USER_KEY}
       - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
