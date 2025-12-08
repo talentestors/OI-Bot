@@ -47,8 +47,6 @@ if env_run_evironment == "dev":
         logger.info("已注册 Console 适配器")
         nonebot.load_builtin_plugin("echo")  # 内置插件
         logger.info("已加载 echo 插件")
-
-if env_run_evironment == "dev":
     nonebot.load_plugin("nonebot_plugin_docs")  # 离线文档
 
 # 默认环境下
