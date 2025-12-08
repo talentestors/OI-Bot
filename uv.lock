@@ -1331,7 +1331,7 @@ wheels = [
 
 [[package]]
 name = "oi-bot"
-version = "2.5.6"
+version = "2.5.7"
 source = { virtual = "." }
 dependencies = [
     { name = "nonebot-adapter-console" },
@@ -1341,6 +1341,7 @@ dependencies = [
     { name = "nonebot-plugin-oi-helper" },
     { name = "nonebot-plugin-whateat-pic" },
     { name = "nonebot2", extra = ["aiohttp", "fastapi"] },
+    { name = "nonechat" },
 ]
 
 [package.dev-dependencies]
@@ -1363,6 +1364,7 @@ requires-dist = [
     { name = "nonebot-plugin-oi-helper", specifier = ">=0.7.3" },
     { name = "nonebot-plugin-whateat-pic", specifier = ">=1.5.7" },
     { name = "nonebot2", extras = ["aiohttp", "fastapi"], specifier = ">=2.4.2" },
+    { name = "nonechat", specifier = "==0.6.1" },
 ]
 
 [package.metadata.requires-dev]
