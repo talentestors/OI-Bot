@@ -55,5 +55,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/oi-bot:latest
-            # ${{ github.ref == 'refs/heads/main' && format('ghcr.io/{0}/oi-bot:latest', github.repository_owner) || '' }}
           labels: ${{ steps.meta.outputs.labels }}
