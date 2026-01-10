@@ -1,5 +1,5 @@
 name: Docker Image
-description: Build and push Docker image to GitHub Container Registry
+# description: 'Build and push Docker image to GitHub Container Registry'
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
             type=semver,pattern={{major}}
             type=sha
         env:
-            DOCKER_METADATA_TAGS_PREFIX: '' 
+            DOCKER_METADATA_TAGS_PREFIX: ''
 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
@@ -55,5 +55,5 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/oi-bot:latest
-            # ${{ github.ref == 'refs/heads/main' && 'ghcr.io/' + github.repository_owner + '/oi-bot:latest' || '' }}
+            # ${{ github.ref == 'refs/heads/main' && format('ghcr.io/{0}/oi-bot:latest', github.repository_owner) || '' }}
           labels: ${{ steps.meta.outputs.labels }}
