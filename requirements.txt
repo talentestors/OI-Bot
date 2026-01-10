@@ -177,7 +177,7 @@ rich==13.9.4
     # via
     #   nonebot-plugin-whateat-pic
     #   textual
-starlette==0.50.0
+starlette==0.51.0
     # via fastapi
 tarina==0.7.3
     # via
