@@ -1,6 +1,6 @@
 [project]
 name = "oi-bot"
-version = "3.0.3"
+version = "3.1.0"
 description = "This chatbot provides match information for OIer and ACMer, based on the Nonebot2 framework."
 readme = "README.md"
 requires-python = ">=3.12, <4.0"
@@ -14,9 +14,9 @@ dependencies = [
     "nonebot-adapter-console>=0.6.0",
     "nonechat==0.3.0",
     "nonebot-plugin-oi-helper>=1.1.0",
-    "nonebot-plugin-neuro-draw>=0.1.0",
     "nonebot-plugin-alconna>=0.57.6",
     "nonebot-plugin-whateat-pic>=1.5.7",
+    "nonebot-plugin-localstore>=0.7.4",
 ]
 
 [dependency-groups]
