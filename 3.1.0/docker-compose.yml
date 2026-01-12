@@ -1,0 +1,33 @@
+services:
+  oi-bot:
+    image: ghcr.io/talentestors/oi-bot:latest
+    container_name: ${CONTAINER_NAME}
+    restart: unless-stopped
+    networks:
+      - 1panel-network
+    ports:
+      - "${PORT}:8024"
+    privileged: true
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Shanghai
+      - LOG_LEVEL=${LOG_LEVEL}
+      - ENVIRONMENT=${LOG_LEVEL}
+      - CLIST__USERNAME=${CLIST__USERNAME}
+      - CLIST__USER_KEY=${CLIST__USER_KEY}
+      - ONEBOT_ACCESS_TOKEN=${ONEBOT_ACCESS_TOKEN}
+      - BOT_URL_FILTER_ENABLE=${BOT_URL_FILTER_ENABLE}
+    volumes:
+      - /root/.local/share/nonebot2:/root/.local/share/nonebot2
+      - /root/.cache/nonebot2:/root/.cache/nonebot2
+    labels:
+      createdBy: "Apps"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "32m"
+        max-file: "7"
+networks:
+  1panel-network:
+    external: true
