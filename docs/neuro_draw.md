@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://s3.yuhiri.me/we/https://r2.yuhiri.me/neuro-lucky/speed.gif" alt="neuro" style="zoom:25%" />
+  <img src="https://s3.yuhiri.me/we/https://r2.yuhiri.me/neuro-lucky/speed.gif" alt="neuro" style="width: 25%;" />
 
 </div>
 
