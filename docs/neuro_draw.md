@@ -13,3 +13,11 @@ Based on the plugin *[nonebot-plugin-neuro-draw](https://github.com/Cvandia/none
 I have modified it to use my own object storage and CDN caching.
 
 Thanks to *[Lucky Neuro Game](https://neuro.nya.pub/game/luck/)*.
+
+## Command
+
+- **/lucky**
+- **/luck**
+- **/neuro_draw**
+- **/牛签**
+- **/抽签**

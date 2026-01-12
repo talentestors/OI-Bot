@@ -20,4 +20,5 @@ Additional path '/root/.cache/nonebot2' needs to be volume mounted.
 
 - [nonebot-plugin-whateat-pic](https://github.com/Cvandia/nonebot-plugin-whateat-pic)
 - [nonebot-plugin-oi-helper](https://github.com/talentestors/nonebot-plugin-oi-helper)
-- [nonebot-plugin-neuro-draw](https://github.com/zhaomaoniu/nonebot-plugin-neuro-draw)
+- ~~[nonebot-plugin-neuro-draw](https://github.com/zhaomaoniu/nonebot-plugin-neuro-draw)~~
+- [neuro-draw](./neuro_draw.md)
