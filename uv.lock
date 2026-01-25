@@ -1032,14 +1032,14 @@ wheels = [
 
 [[package]]
 name = "nonechat"
-version = "0.3.0"
+version = "0.6.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "textual" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/53/05/048bad79f2eddcd3cb5066755241aae163dcd41064d1e67ee61520ec8cda/nonechat-0.3.0.tar.gz", hash = "sha256:a8e66d6a3d8ce1597464293c04aec69cc84caaecde58b906553c9268dac0777e", size = 11204, upload-time = "2024-08-15T05:28:46.107Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/14/4ef5d6b9569315a36160cbb4f43837ba1452df08229fa47654928111f7a3/nonechat-0.6.1.tar.gz", hash = "sha256:4cf39badc4af1ebf72062dac879bd8f0a0063ce4f8e53e9679988b2ec6667117", size = 19294, upload-time = "2025-07-24T06:57:45.696Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ac/1a/4b5b5794651c2bd671fd84524b8839effefdc550526e0dd9d5b6a57c8ede/nonechat-0.3.0-py3-none-any.whl", hash = "sha256:4091c90a9a718a3b8a9db49ea2d6b779926e6246f25dd0bea2033d5b364a9d06", size = 17480, upload-time = "2024-08-15T05:28:44.766Z" },
+    { url = "https://files.pythonhosted.org/packages/9f/d5/8f30606713bea1d862477c67f5f4c8bda562c752d72321630b6269cd920f/nonechat-0.6.1-py3-none-any.whl", hash = "sha256:899f26416e01cc0f3beb4798e8ce73a47bac4627b610a0609fe07f6d8246bf0c", size = 28454, upload-time = "2025-07-24T06:57:44.226Z" },
 ]
 
 [[package]]
@@ -1098,7 +1098,7 @@ requires-dist = [
     { name = "nonebot-plugin-oi-helper", specifier = ">=1.1.0" },
     { name = "nonebot-plugin-whateat-pic", specifier = ">=1.5.7" },
     { name = "nonebot2", extras = ["httpx", "fastapi"], specifier = ">=2.4.2" },
-    { name = "nonechat", specifier = "==0.3.0" },
+    { name = "nonechat", specifier = "==0.6.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -1705,18 +1705,17 @@ wheels = [
 
 [[package]]
 name = "textual"
-version = "6.2.1"
+version = "3.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown-it-py", extra = ["linkify", "plugins"] },
     { name = "platformdirs" },
-    { name = "pygments" },
     { name = "rich" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/30/38b615f7d4b16f6fdd73e4dcd8913e2d880bbb655e68a076e3d91181a7ee/textual-6.2.1.tar.gz", hash = "sha256:4699d8dfae43503b9c417bd2a6fb0da1c89e323fe91c4baa012f9298acaa83e1", size = 1570645, upload-time = "2025-10-01T16:11:24.467Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/af/83/c99c252c3fad2f7010ceb476a31af042eec71da441ffeef75bb590bc2e9e/textual-3.7.1.tar.gz", hash = "sha256:a76ba0c8a6c194ef24fd5c3681ebfddca55e7127c064a014128c84fbd7f5d271", size = 1604038, upload-time = "2025-07-09T09:04:45.477Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c5/93/02c7adec57a594af28388d85da9972703a4af94ae1399542555cd9581952/textual-6.2.1-py3-none-any.whl", hash = "sha256:3c7190633cd4d8bfe6049ae66808b98da91ded2edb85cef54e82bf77b03d2a54", size = 710702, upload-time = "2025-10-01T16:11:22.161Z" },
+    { url = "https://files.pythonhosted.org/packages/15/f1/8929fcce6dc983f7a260d0f3ddd2a69b74ba17383dbe57a7e0a9e085e8be/textual-3.7.1-py3-none-any.whl", hash = "sha256:ab5d153f4f65e77017977fa150d0376409e0acf5f1d2e25e2e4ab9de6c0d61ff", size = 691472, upload-time = "2025-07-09T09:04:43.626Z" },
 ]
 
 [[package]]
