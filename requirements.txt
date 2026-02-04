@@ -173,7 +173,7 @@ python-dotenv==1.2.1
     #   uvicorn
 pyyaml==6.0.3
     # via uvicorn
-rich==14.3.1
+rich==14.3.2
     # via
     #   nonebot-plugin-whateat-pic
     #   textual
