@@ -143,7 +143,7 @@ nonechat==0.3.0
     #   nonebot-adapter-console
 nonestorage==0.1.0
     # via nonebot-plugin-localstore
-pillow==12.1.0
+pillow==12.1.1
     # via nonebot-plugin-whateat-pic
 platformdirs==4.5.1
     # via textual
