@@ -83,8 +83,8 @@ This project includes software from the following sources:
    - Licensed under the MIT License
 3. [nonebot-plugin-oi-helper](https://github.com/talentestors/nonebot-plugin-oi-helper)
    - Copyright (C) 2024 talentestors
-   - Licensed under the GNU Affero General Public License, Version 3 or later
-   - <https://www.gnu.org/licenses/agpl-3.0.html>
+   - Licensed under the GNU Lesser General Public License, Version 3 or later
+   - <https://www.gnu.org/licenses/lgpl-3.0.html>
 4. [nonebot-plugin-alconna](https://github.com/nonebot/plugin-alconna)
    - Licensed under the MIT License
    - Copyright (C) 2021 nonebot
