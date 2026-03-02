@@ -222,7 +222,7 @@ websockets==16.0
     # via uvicorn
 win32-setctime==1.2.0
     # via loguru
-yarl==1.22.0
+yarl==1.23.0
     # via
     #   aiohttp
     #   nonebot2
