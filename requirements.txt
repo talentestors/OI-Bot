@@ -186,7 +186,7 @@ tarina==0.7.3
     #   nonebot-plugin-alconna
 tenacity==9.1.4
     # via nonebot-plugin-oi-helper
-textual==8.0.0
+textual==8.0.1
     # via nonechat
 typing-extensions==4.15.0
     # via
