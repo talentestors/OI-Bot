@@ -167,7 +167,7 @@ pygments==2.19.2
     #   textual
 pygtrie==2.5.0
     # via nonebot2
-python-dotenv==1.2.1
+python-dotenv==1.2.2
     # via
     #   nonebot2
     #   uvicorn
