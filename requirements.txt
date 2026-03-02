@@ -75,7 +75,7 @@ idna==3.11
     #   yarl
 importlib-metadata==8.7.1
     # via nonebot-plugin-alconna
-linkify-it-py==2.0.3
+linkify-it-py==2.1.0
     # via markdown-it-py
 loguru==0.7.3
     # via nonebot2
