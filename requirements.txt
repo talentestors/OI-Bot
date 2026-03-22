@@ -73,7 +73,7 @@ idna==3.11
     #   anyio
     #   httpx
     #   yarl
-importlib-metadata==8.8.0
+importlib-metadata==9.0.0
     # via nonebot-plugin-alconna
 linkify-it-py==2.1.0
     # via markdown-it-py
