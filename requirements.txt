@@ -18,7 +18,7 @@ anyio==4.12.1
     #   watchfiles
 apscheduler==3.11.2
     # via nonebot-plugin-apscheduler
-arclet-alconna==1.8.43
+arclet-alconna==1.8.44
     # via
     #   arclet-alconna-tools
     #   nonebot-plugin-alconna
