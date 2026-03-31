@@ -161,7 +161,7 @@ pydantic==2.12.5
     #   nonebot2
 pydantic-core==2.44.0
     # via pydantic
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   rich
     #   textual
