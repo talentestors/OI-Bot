@@ -125,7 +125,7 @@ nonebot-plugin-waiter==0.8.1
     # via nonebot-plugin-alconna
 nonebot-plugin-whateat-pic==1.5.7
     # via oi-bot (pyproject.toml)
-nonebot2==2.4.4
+nonebot2==2.5.0
     # via
     #   oi-bot (pyproject.toml)
     #   nonebot-adapter-console
