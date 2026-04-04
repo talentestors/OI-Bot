@@ -137,7 +137,7 @@ nonebot2==2.5.0
     #   nonebot-plugin-oi-helper
     #   nonebot-plugin-waiter
     #   nonebot-plugin-whateat-pic
-nonechat==0.3.0
+nonechat==0.7.0
     # via
     #   oi-bot (pyproject.toml)
     #   nonebot-adapter-console
