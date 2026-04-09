@@ -145,7 +145,7 @@ nonestorage==0.1.0
     # via nonebot-plugin-localstore
 pillow==12.2.0
     # via nonebot-plugin-whateat-pic
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via textual
 propcache==0.4.1
     # via
