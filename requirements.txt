@@ -214,7 +214,7 @@ tzlocal==5.3.1
     # via apscheduler
 uc-micro-py==2.0.0
     # via linkify-it-py
-uvicorn==0.44.0
+uvicorn==0.45.0
     # via nonebot2
 watchfiles==1.1.1
     # via uvicorn
