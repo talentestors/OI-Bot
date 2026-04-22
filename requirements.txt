@@ -68,7 +68,7 @@ httpx==0.28.1
     #   nonebot2
 hyperframe==6.1.0
     # via h2
-idna==3.11
+idna==3.13
     # via
     #   anyio
     #   httpx
