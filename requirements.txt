@@ -79,7 +79,7 @@ linkify-it-py==2.1.0
     # via markdown-it-py
 loguru==0.7.3
     # via nonebot2
-markdown-it-py==4.0.0
+markdown-it-py==4.2.0
     # via
     #   mdit-py-plugins
     #   rich
