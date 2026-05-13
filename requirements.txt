@@ -84,7 +84,7 @@ markdown-it-py==4.2.0
     #   mdit-py-plugins
     #   rich
     #   textual
-mdit-py-plugins==0.6.0
+mdit-py-plugins==0.6.1
     # via markdown-it-py
 mdurl==0.1.2
     # via markdown-it-py
