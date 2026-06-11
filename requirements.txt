@@ -88,7 +88,7 @@ mdit-py-plugins==0.6.1
     # via markdown-it-py
 mdurl==0.1.2
     # via markdown-it-py
-msgpack==1.1.2
+msgpack==1.2.0
     # via nonebot-adapter-onebot
 multidict==6.7.1
     # via
