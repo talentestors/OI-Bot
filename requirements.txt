@@ -16,7 +16,7 @@ anyio==4.14.1
     #   nonebot2
     #   starlette
     #   watchfiles
-apscheduler==3.11.2
+apscheduler==3.11.3
     # via nonebot-plugin-apscheduler
 arclet-alconna==1.8.44
     # via
