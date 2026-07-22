@@ -30,7 +30,7 @@ brotli==1.2.0
     # via
     #   httpx
     #   nonebot-plugin-oi-helper
-certifi==2026.6.17
+certifi==2026.7.22
     # via
     #   httpcore
     #   httpx
