@@ -165,7 +165,7 @@ pygments==2.21.0
     # via
     #   rich
     #   textual
-pygtrie==2.5.0
+pygtrie==2.6.1
     # via nonebot2
 python-dotenv==1.2.3
     # via
