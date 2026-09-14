@@ -90,7 +90,7 @@ mdurl==0.1.2
     # via markdown-it-py
 msgpack==1.2.2
     # via nonebot-adapter-onebot
-multidict==6.7.1
+multidict==6.8.0
     # via
     #   aiohttp
     #   yarl
