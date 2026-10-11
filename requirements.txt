@@ -151,7 +151,7 @@ propcache==0.5.4
     # via
     #   aiohttp
     #   yarl
-pydantic==2.14.0
+pydantic==2.14.1
     # via
     #   fastapi
     #   nonebot-adapter-console
