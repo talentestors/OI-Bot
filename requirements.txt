@@ -226,7 +226,7 @@ yarl==1.25.1
     # via
     #   aiohttp
     #   nonebot2
-zipp==4.1.1
+zipp==4.1.2
     # via importlib-metadata
 zstandard==0.25.0
     # via
